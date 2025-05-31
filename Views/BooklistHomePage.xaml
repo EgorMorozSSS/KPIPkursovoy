@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Course.Views.BooklistHomePage"
+             xmlns:viewmodel="clr-namespace:Course.ViewModels"
+             x:DataType="viewmodel:BooklistHomePageViewmodel"
+             xmlns:models="clr-namespace:Course.Models"
+             Title="{Binding Title}"
+             xmlns:controls="clr-namespace:Course.CustomControls">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Refresh" Command="{Binding LoadBookFromDatabaseCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Grid.Row="0">
+        <!-- Поле для ввода текста поиска -->
+        <StackLayout Orientation="Horizontal" Padding="10">
+            <Entry Placeholder="Search books..." 
+                   Text="{Binding SearchText}" 
+                   HorizontalOptions="FillAndExpand"
+                   Margin="0,0,5,0"/>
+            <Button Text="Search" Command="{Binding SearchBooksCommand}" />
+        </StackLayout>
+
+        <!-- Picker for filter criteria -->
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+            <Picker Title="Select Genre"
+                    ItemsSource="{Binding Genres}"
+                    SelectedItem="{Binding SelectedGenre, Mode=TwoWay}"
+                    HorizontalOptions="FillAndExpand"/>
+            <Button Text="Filter" Command="{Binding FilterBooksByGenreCommand}" />
+        </StackLayout>
+
+        <ActivityIndicator IsVisible="{Binding LoadBookFromDatabaseCommand.IsRunning}" 
+                           Color="Red" 
+                           IsRunning="{Binding LoadBookFromDatabaseCommand.IsRunning}"  
+                           Margin="50,150,50,0"/>
+        <Grid RowDefinitions="*, Auto" IsVisible="{Binding GridVisibility}">
+            <CollectionView ItemsSource="{Binding Books}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Book">
+                        <Frame Margin="2,5,2,0" Padding="5">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewmodel:BooklistHomePageViewmodel}}, Path=NavigateToDetailsCommand}" 
+                                                      CommandParameter="{Binding .}"/>
+                                <SwipeGestureRecognizer Direction="Left" 
+                                                        Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewmodel:BooklistHomePageViewmodel}}, Path=DeleteBookDataCommand}" 
+                                                        CommandParameter="{Binding .}"/>
+                                <SwipeGestureRecognizer Direction="Right" 
+                                                        Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewmodel:BooklistHomePageViewmodel}}, Path=UpdateBookDataCommand}" 
+                                                        CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+
+                            <HorizontalStackLayout Spacing="20" Padding="0">
+                                <controls:CustomImageControl Base64Source="{Binding Image}" WidthRequest="50" HeightRequest="100"/>
+                                <VerticalStackLayout VerticalOptions="CenterAndExpand">
+                                    <Label Text="{Binding Title}"></Label>
+                                    <Label Text="{Binding Description}"></Label>
+                                    <Label Text="{Binding Genre}"></Label>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <StackLayout Grid.Row="1" Orientation="Horizontal" BackgroundColor="#f0f0f0" Padding="10" HorizontalOptions="FillAndExpand">
+                <Button Text="Profile" Command="{Binding NavigateToProfileCommand}" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

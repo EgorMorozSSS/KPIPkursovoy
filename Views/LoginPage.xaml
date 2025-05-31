@@ -1,0 +1,18 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Course.Views.LoginPage"
+    xmlns:viewmodel="clr-namespace:Course.ViewModels"
+    x:DataType="viewmodel:LoginViewModel"
+    Title="Login">
+
+    <StackLayout Padding="20" Spacing="15">
+        <Entry Placeholder="Email" Text="{Binding Email}" Keyboard="Email"/>
+        <Entry Placeholder="Password" Text="{Binding Password}" IsPassword="True"/>
+
+        <Button Text="Login" Command="{Binding LoginCommand}" />
+        <Button Text="No acc? registration"
+                Command="{Binding NavigateToRegistrationCommand}"
+                TextColor="White"/>
+    </StackLayout>
+</ContentPage>

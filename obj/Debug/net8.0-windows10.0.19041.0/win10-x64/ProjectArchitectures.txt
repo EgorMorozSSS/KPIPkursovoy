@@ -1,0 +1,1 @@
+C:\Users\Egor\source\repos\Course\Course.csproj;x64

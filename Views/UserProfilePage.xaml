@@ -1,0 +1,47 @@
+﻿<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodel="clr-namespace:Course.ViewModels"
+    x:Class="Course.Views.UserProfilePage"
+    x:DataType="viewmodel:UserProfileViewModel"
+    Title="User Profile">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Аватар -->
+            <Frame HorizontalOptions="Center" 
+                   CornerRadius="100"
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   Padding="0">
+                <Image Source="{Binding AvatarImage}"
+                       Aspect="AspectFill"
+                       HeightRequest="150"
+                       WidthRequest="150"/>
+            </Frame>
+
+            <Button Text="Change Avatar" 
+                    Command="{Binding ChangeAvatarCommand}"
+                    HorizontalOptions="Center"/>
+
+            <!-- Информация -->
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Name:" FontAttributes="Bold"/>
+                <Entry Text="{Binding Name}" 
+                       Placeholder="Enter your name"/>
+
+                <Label Text="Email:" FontAttributes="Bold"/>
+                <Entry Text="{Binding Email}" 
+                       Placeholder="Enter email"
+                       IsEnabled="False"/>
+            </VerticalStackLayout>
+
+            <!-- Кнопка сохранения -->
+            <Button Text="Save Profile" 
+                    Command="{Binding SaveProfileCommand}"
+                    HorizontalOptions="End"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
