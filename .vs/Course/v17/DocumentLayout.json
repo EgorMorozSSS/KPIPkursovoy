@@ -174,7 +174,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 39,
+          "SelectedChildIndex": 38,
           "Children": [
             {
               "$type": "Bookmark",
@@ -183,10 +183,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -399,8 +395,7 @@
               "RelativeToolTip": "DataServices\\IAuthorService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T07:45:49.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T07:45:49.37Z"
             },
             {
               "$type": "Document",
@@ -520,8 +515,7 @@
               "RelativeToolTip": "Views\\BooklistHomePage.xaml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-31T07:13:25.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T07:13:25.183Z"
             },
             {
               "$type": "Document",
@@ -593,8 +587,7 @@
               "RelativeToolTip": "ViewModels\\AddOrUpdateBookPageViewmodel.cs",
               "ViewState": "AgIAAJ8AAAAAAAAAAAAowKcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T06:27:58.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T06:27:58.602Z"
             },
             {
               "$type": "Document",
@@ -606,8 +599,7 @@
               "RelativeToolTip": "Views\\AddOrUpdateBookPage.xaml",
               "ViewState": "AgIAACMAAAAAAAAAAAAYwEIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-31T06:26:58.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T06:26:58.578Z"
             },
             {
               "$type": "Document",
@@ -619,8 +611,7 @@
               "RelativeToolTip": "Models\\Error.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T06:13:31.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T06:13:31.375Z"
             },
             {
               "$type": "Document",
@@ -694,6 +685,10 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAwwBwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T06:01:16.245Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         }
