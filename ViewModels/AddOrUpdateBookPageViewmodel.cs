@@ -7,6 +7,7 @@ using Course.DataServices;
 using Course.Models;
 using Course.Views;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Course.ViewModels
@@ -127,7 +128,40 @@ namespace Course.ViewModels
             ShowErrors = true;
             return;
         }
+        [ObservableProperty]
+        private string _audioFileName;
 
+        [RelayCommand]
+        private async Task SelectAudio()
+        {
+            try
+            {
+                var audioFile = await FilePicker.PickAsync(new PickOptions
+                {
+                    PickerTitle = "Select Audio File",
+                    FileTypes = FilePickerFileType.Audio
+                });
+
+                if (audioFile == null) return;
+
+                // Сохраняем во временную папку
+                var cacheDir = FileSystem.CacheDirectory;
+                var targetFile = Path.Combine(cacheDir, audioFile.FileName);
+
+                using (var stream = await audioFile.OpenReadAsync())
+                using (var fileStream = File.OpenWrite(targetFile))
+                {
+                    await stream.CopyToAsync(fileStream);
+                }
+
+                AddBookModel.AudioFilePath = targetFile;
+                _audioFileName = audioFile.FileName;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Audio selection failed: {ex.Message}");
+            }
+        }
         // Validate book model
         private bool ValidateModel(Book validateBook)
         {

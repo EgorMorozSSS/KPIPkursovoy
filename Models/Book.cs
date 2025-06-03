@@ -17,5 +17,6 @@ namespace Course.Models
 
         [Ignore]
         public Author Author { get; set; }
+        public string AudioFilePath { get; set; }
     }
 }
