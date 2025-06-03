@@ -57,10 +57,18 @@
                         <controls:CustomImageControl Base64Source="{Binding AddBookModel.Image}" WidthRequest="100" HeightRequest="150"/>
                     </HorizontalStackLayout>
                 </inputLayout:SfTextInputLayout>
-
+                <!-- После элемента для изображения -->
+                
             </HorizontalStackLayout>
             <BoxView></BoxView>
+            <Button Text="Select Audio" 
+             Command="{Binding SelectAudioCommand}"
+             Margin="10"/>
 
+            <Label Text="{Binding AudioFileName}"
+            IsVisible="{Binding AudioFileName, Converter={x:StaticResource StringNotEmptyConverter}}"
+            FontAttributes="Italic"
+            Margin="10,0"/>
             <Button Text="Save Data" Margin="10" Command="{Binding SaveDataCommand}"></Button>
         </VerticalStackLayout>
     </StackLayout>

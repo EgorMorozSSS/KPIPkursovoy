@@ -139,12 +139,17 @@ namespace Course.ViewModels
                 var audioFile = await FilePicker.PickAsync(new PickOptions
                 {
                     PickerTitle = "Select Audio File",
-                    FileTypes = FilePickerFileType.Audio
+                    FileTypes = new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
+            {
+                { DevicePlatform.iOS, new[] { "public.audio" } },
+                { DevicePlatform.Android, new[] { "audio/*" } },
+                { DevicePlatform.WinUI, new[] { ".mp3", ".wav", ".m4a" } },
+                { DevicePlatform.macOS, new[] { "public.audio" } }
+            })
                 });
 
                 if (audioFile == null) return;
 
-                // Сохраняем во временную папку
                 var cacheDir = FileSystem.CacheDirectory;
                 var targetFile = Path.Combine(cacheDir, audioFile.FileName);
 
@@ -155,13 +160,14 @@ namespace Course.ViewModels
                 }
 
                 AddBookModel.AudioFilePath = targetFile;
-                _audioFileName = audioFile.FileName;
+                AudioFileName = audioFile.FileName;
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Audio selection failed: {ex.Message}");
             }
         }
+
         // Validate book model
         private bool ValidateModel(Book validateBook)
         {

@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Course</name>
+    </assembly>
+    <members>
+        <member name="T:Course.ViewModels.AddBookBaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.AddBookBaseViewModel.Title">
+            <inheritdoc cref="F:Course.ViewModels.AddBookBaseViewModel._title"/>
+        </member>
+        <member name="T:Course.ViewModels.AddOrUpdateBookPageViewmodel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.AddBookModel">
+            <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._addBookModel"/>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.ShowErrors">
+            <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._showErrors"/>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.ImageSourceFile">
+            <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._imageSourceFile"/>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.AudioFileName">
+            <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._audioFileName"/>
+        </member>
+        <member name="F:Course.ViewModels.AddOrUpdateBookPageViewmodel.selectImageCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.SelectImageCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.SelectImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.AddOrUpdateBookPageViewmodel.SelectImage"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.AddOrUpdateBookPageViewmodel.saveDataCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.SaveDataCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.SaveDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.AddOrUpdateBookPageViewmodel.SaveData"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.AddOrUpdateBookPageViewmodel.selectAudioCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.SelectAudioCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.SelectAudioCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.AddOrUpdateBookPageViewmodel.SelectAudio"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.AddOrUpdateBookPageViewmodel.navigateToHomeCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.NavigateToHomeCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.NavigateToHomeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.AddOrUpdateBookPageViewmodel.NavigateToHome"/>.</summary>
+        </member>
+        <member name="T:Course.ViewModels.BookDetailsPageViewmodel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.BookModel">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._bookModel"/>
+        </member>
+        <member name="T:Course.ViewModels.BooklistHomePageViewmodel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.GridVisibility">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._gridVisibility"/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.SearchText">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._searchText"/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.SelectedGenre">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._selectedGenre"/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.IsAuthor">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._isAuthor"/>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.searchBooksCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.SearchBooksCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.SearchBooksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.SearchBooks"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.loadBookFromDatabaseCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.LoadBookFromDatabaseCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.LoadBookFromDatabaseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.LoadBookFromDatabase"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.navigateToAddBookPageCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.NavigateToAddBookPageCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.NavigateToAddBookPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.NavigateToAddBookPage"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.navigateToDetailsCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.NavigateToDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.NavigateToDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.NavigateToDetails(Course.Models.Book)"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.deleteBookDataCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.DeleteBookDataCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.DeleteBookDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.DeleteBookData(Course.Models.Book)"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.updateBookDataCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.UpdateBookDataCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.UpdateBookDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.UpdateBookData(Course.Models.Book)"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.filterBooksByGenreCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.FilterBooksByGenreCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.FilterBooksByGenreCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.FilterBooksByGenre"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.navigateToProfileCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.NavigateToProfileCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.NavigateToProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.NavigateToProfile"/>.</summary>
+        </member>
+        <member name="T:Course.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.LoginViewModel.Email">
+            <inheritdoc cref="F:Course.ViewModels.LoginViewModel._email"/>
+        </member>
+        <member name="P:Course.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:Course.ViewModels.LoginViewModel._password"/>
+        </member>
+        <member name="F:Course.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.LoginViewModel.Login"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.LoginViewModel.navigateToRegistrationCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.LoginViewModel.NavigateToRegistrationCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.LoginViewModel.NavigateToRegistrationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.LoginViewModel.NavigateToRegistration"/>.</summary>
+        </member>
+        <member name="T:Course.ViewModels.RegistrationViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.Name">
+            <inheritdoc cref="F:Course.ViewModels.RegistrationViewModel._name"/>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.Email">
+            <inheritdoc cref="F:Course.ViewModels.RegistrationViewModel._email"/>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.Password">
+            <inheritdoc cref="F:Course.ViewModels.RegistrationViewModel._password"/>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.SelectedRole">
+            <inheritdoc cref="F:Course.ViewModels.RegistrationViewModel._selectedRole"/>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.Roles">
+            <inheritdoc cref="F:Course.ViewModels.RegistrationViewModel._roles"/>
+        </member>
+        <member name="F:Course.ViewModels.RegistrationViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.RegistrationViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.RegistrationViewModel.Register"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.RegistrationViewModel.navigateToHomeCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.RegistrationViewModel.NavigateToHomeCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.NavigateToHomeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.RegistrationViewModel.NavigateToHome"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.RegistrationViewModel.navigateToLoginCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.RegistrationViewModel.NavigateToLoginCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.RegistrationViewModel.NavigateToLoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.RegistrationViewModel.NavigateToLogin"/>.</summary>
+        </member>
+        <member name="T:Course.ViewModels.UserProfileViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.UserProfileViewModel.Name">
+            <inheritdoc cref="F:Course.ViewModels.UserProfileViewModel._name"/>
+        </member>
+        <member name="P:Course.ViewModels.UserProfileViewModel.Email">
+            <inheritdoc cref="F:Course.ViewModels.UserProfileViewModel._email"/>
+        </member>
+        <member name="P:Course.ViewModels.UserProfileViewModel.AvatarImage">
+            <inheritdoc cref="F:Course.ViewModels.UserProfileViewModel._avatarImage"/>
+        </member>
+        <member name="F:Course.ViewModels.UserProfileViewModel.changeAvatarCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.UserProfileViewModel.ChangeAvatarCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.UserProfileViewModel.ChangeAvatarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.UserProfileViewModel.ChangeAvatar"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.UserProfileViewModel.saveProfileCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.UserProfileViewModel.SaveProfileCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.UserProfileViewModel.SaveProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.UserProfileViewModel.SaveProfile"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AddBookModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ShowErrors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ShowErrors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImageSourceFile">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImageSourceFile" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AudioFileName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AudioFileName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GridVisibility">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GridVisibility" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SearchText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SearchText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedGenre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedGenre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsAuthor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsAuthor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedRole">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedRole" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Roles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Roles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AvatarImage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AvatarImage" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AddBookModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ShowErrors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ShowErrors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImageSourceFile">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImageSourceFile" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AudioFileName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AudioFileName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GridVisibility">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GridVisibility" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SearchText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SearchText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedGenre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedGenre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsAuthor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsAuthor" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedRole">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedRole" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Roles">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Roles" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AvatarImage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AvatarImage" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__ObservableValidatorExtensions">
+            <summary>
+            A helper type with generated validation stubs for types deriving from <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservableValidator"/>.
+            </summary>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.ComponentModel.__Internals.__ObservableValidatorExtensions.CreateAllPropertiesValidator(Course.ViewModels.LoginViewModel)">
+            <summary>
+            Creates a validation stub for <see cref="T:Course.ViewModels.LoginViewModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A validation stub for <see cref="T:Course.ViewModels.LoginViewModel"/> objects.</returns>
+        </member>
+        <member name="M:CommunityToolkit.Mvvm.ComponentModel.__Internals.__ObservableValidatorExtensions.CreateAllPropertiesValidator(Course.ViewModels.RegistrationViewModel)">
+            <summary>
+            Creates a validation stub for <see cref="T:Course.ViewModels.RegistrationViewModel"/> objects.
+            </summary>
+            <param name="_">Dummy parameter, only used to disambiguate the method signature.</param>
+            <returns>A validation stub for <see cref="T:Course.ViewModels.RegistrationViewModel"/> objects.</returns>
+        </member>
+    </members>
+</doc>

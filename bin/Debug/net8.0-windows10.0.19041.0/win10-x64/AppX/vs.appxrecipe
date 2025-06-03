@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Egor\source\repos\Course\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-05-31T06:34:04.222</Modified>
+      <Modified>2025-06-03T10:07:19.737</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Egor\source\repos\Course\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-05-30T06:59:30.423</Modified>
+      <Modified>2025-06-03T10:07:19.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Egor\source\repos\Course\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Course.runtimeconfig.json">
       <PackagePath>Course.runtimeconfig.json</PackagePath>
-      <Modified>2025-05-24T06:29:38.017</Modified>
+      <Modified>2025-06-03T10:07:19.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Egor\source\repos\Course\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Course.dll">
       <PackagePath>Course.dll</PackagePath>
-      <Modified>2025-05-30T06:59:29.163</Modified>
+      <Modified>2025-06-03T10:07:18.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Egor\source\repos\Course\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Course.exe</PackagePath>
-      <Modified>2025-05-30T06:59:29.207</Modified>
+      <Modified>2025-06-03T10:07:18.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Egor\source\repos\Course\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Egor\source\repos\Course\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Course.deps.json">
       <PackagePath>Course.deps.json</PackagePath>
-      <Modified>2025-05-30T06:59:30.238</Modified>
+      <Modified>2025-06-03T10:07:19.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Egor\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -305,6 +305,10 @@
     <AppxPackagedFile Include="C:\Users\Egor\.nuget\packages\communitytoolkit.maui.core\5.3.0\lib\net7.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
       <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
       <Modified>2023-08-09T08:31:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Egor\.nuget\packages\communitytoolkit.maui.mediaelement\4.1.2\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.MediaElement.dll">
+      <PackagePath>CommunityToolkit.Maui.MediaElement.dll</PackagePath>
+      <Modified>2024-10-15T09:41:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Egor\.nuget\packages\communitytoolkit.mvvm\8.2.1\lib\net6.0\CommunityToolkit.Mvvm.dll">
       <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>

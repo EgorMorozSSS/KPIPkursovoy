@@ -10,6 +10,7 @@
       "Course/1.0": {
         "dependencies": {
           "CommunityToolkit.Maui": "5.3.0",
+          "CommunityToolkit.Maui.MediaElement": "4.1.2",
           "CommunityToolkit.Mvvm": "8.2.1",
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.100",
@@ -55,6 +56,17 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.100"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -617,6 +629,13 @@
       "sha512": "sha512-fy7jBKU3uxWFXXUeLZ3NnZOQgxZ6CdiGJNXLEUnt8T5Bsnp2/Vlwl6TAGf3q4B1ToJUNLJOMoGxaRP25ktevSQ==",
       "path": "communitytoolkit.maui.core/5.3.0",
       "hashPath": "communitytoolkit.maui.core.5.3.0.nupkg.sha512"
+    },
+    "CommunityToolkit.Maui.MediaElement/4.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ejt3VnllmmsqbVn1sWYczUS4m78Mz5yre0+SpFyBkPMoz9oegAOR5xq8JOoA5H341NUono9l6lqtPipnJZxodQ==",
+      "path": "communitytoolkit.maui.mediaelement/4.1.2",
+      "hashPath": "communitytoolkit.maui.mediaelement.4.1.2.nupkg.sha512"
     },
     "CommunityToolkit.Mvvm/8.2.1": {
       "type": "package",
