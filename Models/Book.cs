@@ -18,5 +18,7 @@ namespace Course.Models
         [Ignore]
         public Author Author { get; set; }
         public string AudioFilePath { get; set; }
+        [Ignore]
+        public List<Review> Reviews { get; set; } = new();
     }
 }

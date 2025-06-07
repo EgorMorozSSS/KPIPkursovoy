@@ -17,9 +17,6 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.AddBookModel">
-            <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._addBookModel"/>
-        </member>
         <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.ShowErrors">
             <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._showErrors"/>
         </member>
@@ -28,6 +25,15 @@
         </member>
         <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.AudioFileName">
             <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._audioFileName"/>
+        </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.AddBookModel">
+            <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._addBookModel"/>
+        </member>
+        <member name="M:Course.ViewModels.AddOrUpdateBookPageViewmodel.OnAddBookModelChanged(Course.Models.Book,Course.Models.Book)">
+            <summary>Executes the logic for when <see cref="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.AddBookModel"/> just changed.</summary>
+            <param name="oldValue">The previous property value that was replaced.</param>
+            <param name="newValue">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.AddBookModel"/> is changed.</remarks>
         </member>
         <member name="F:Course.ViewModels.AddOrUpdateBookPageViewmodel.selectImageCommand">
             <summary>The backing field for <see cref="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.SelectImageCommand"/>.</summary>
@@ -55,9 +61,50 @@
         </member>
         <member name="T:Course.ViewModels.BookDetailsPageViewmodel">
             <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:Course.ViewModels.BookDetailsPageViewmodel.BookModel">
             <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._bookModel"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.CurrentPosition">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._currentPosition"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.Duration">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._duration"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.IsPlaying">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._isPlaying"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.PlaybackSpeed">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._playbackSpeed"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.ManualSliderValue">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._manualSliderValue"/>
+        </member>
+        <member name="M:Course.ViewModels.BookDetailsPageViewmodel.OnBookModelChanged(Course.Models.Book)">
+            <summary>Executes the logic for when <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.BookModel"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.BookModel"/> is changed.</remarks>
+        </member>
+        <member name="F:Course.ViewModels.BookDetailsPageViewmodel.playPauseCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.PlayPauseCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.PlayPauseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.PlayPause"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BookDetailsPageViewmodel.changeSpeedCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.ChangeSpeedCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.ChangeSpeedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.ChangeSpeed"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BookDetailsPageViewmodel.rewindCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.RewindCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.RewindCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.Rewind(System.Object)"/>.</summary>
         </member>
         <member name="T:Course.ViewModels.BooklistHomePageViewmodel">
             <inheritdoc/>
@@ -337,9 +384,6 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AddBookModel">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ShowErrors">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ShowErrors" generated properties.</summary>
         </member>
@@ -349,8 +393,26 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AudioFileName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AudioFileName" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AddBookModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentPosition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentPosition" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Duration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Duration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsPlaying">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsPlaying" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PlaybackSpeed">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PlaybackSpeed" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ManualSliderValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ManualSliderValue" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GridVisibility">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GridVisibility" generated properties.</summary>
@@ -391,9 +453,6 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AddBookModel">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ShowErrors">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ShowErrors" generated properties.</summary>
         </member>
@@ -403,8 +462,26 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AudioFileName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AudioFileName" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AddBookModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookModel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentPosition">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentPosition" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Duration">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Duration" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsPlaying">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsPlaying" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PlaybackSpeed">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PlaybackSpeed" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ManualSliderValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ManualSliderValue" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GridVisibility">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GridVisibility" generated properties.</summary>

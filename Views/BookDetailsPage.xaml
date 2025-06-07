@@ -2,51 +2,90 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Course.Views.BookDetailsPage"
-              xmlns:viewmodel="clr-namespace:Course.ViewModels"
-             x:DataType="viewmodel:BookDetailsPageViewmodel"
+             xmlns:viewmodel="clr-namespace:Course.ViewModels"
+             xmlns:converters="clr-namespace:Course.Converters"
              xmlns:controls="clr-namespace:Course.CustomControls"
+             xmlns:models="clr-namespace:Course.Models"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodel:BookDetailsPageViewmodel"
              Title="BookDetailsPage">
     
     <ScrollView>
         <VerticalStackLayout Margin="0,10,0,0">
             <Frame>
-
                 <VerticalStackLayout>
                     <controls:CustomImageControl Base64Source="{Binding BookModel.Image}" WidthRequest="500" HeightRequest="600"/>
+
                     <Frame BorderColor="BlueViolet">
                         <VerticalStackLayout Spacing="10">
+                            <!-- Детали книги -->
                             <Frame>
                                 <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book SN: "  HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Id}"  HorizontalOptions="CenterAndExpand" FontSize="18"/>
+                                    <Label Text="Book SN: " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
+                                    <Label Text="{Binding BookModel.Id}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
                                 </VerticalStackLayout>
                             </Frame>
 
                             <Frame>
                                 <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book Title: "  HorizontalOptions="Center" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Title}"  HorizontalOptions="CenterAndExpand" FontSize="18"/>
+                                    <Label Text="Book Title: " HorizontalOptions="Center" FontAttributes="Bold" FontSize="18"/>
+                                    <Label Text="{Binding BookModel.Title}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
                                 </VerticalStackLayout>
                             </Frame>
 
                             <Frame>
                                 <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book Description: "  HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Description}"  HorizontalOptions="CenterAndExpand"  FontSize="18"/>
+                                    <Label Text="Book Description: " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
+                                    <Label Text="{Binding BookModel.Description}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
                                 </VerticalStackLayout>
                             </Frame>
 
                             <Frame>
                                 <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book Genre: "  HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Genre}"  HorizontalOptions="CenterAndExpand"  FontSize="18"/>
+                                    <Label Text="Book Genre: " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
+                                    <Label Text="{Binding BookModel.Genre}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
                                 </VerticalStackLayout>
                             </Frame>
+
+
+                            <!-- Аудиоплеер UI -->
+                            <Slider Minimum="0"
+                    Maximum="{Binding Duration.TotalSeconds}"
+                    Value="{Binding ManualSliderValue, Mode=TwoWay}" />
+
+                            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                                <Label Text="{Binding CurrentPosition}" />
+                                <Label Text="/" />
+                                <Label Text="{Binding Duration}" />
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                                <Button Text="⏪-10" Command="{Binding RewindCommand}" CommandParameter="-10"/>
+                                <Button Text="⏪-15" Command="{Binding RewindCommand}" CommandParameter="-15"/>
+                                <Button Text="{Binding IsPlaying, Converter={StaticResource BoolToPlayPauseConverter}}" Command="{Binding PlayPauseCommand}" />
+                                <Button Text="⏩+10" Command="{Binding RewindCommand}" CommandParameter="10"/>
+                                <Button Text="⏪+15" Command="{Binding RewindCommand}" CommandParameter="15"/>
+                            </HorizontalStackLayout>
+
                         </VerticalStackLayout>
+                        
                     </Frame>
+                    <CollectionView ItemsSource="{Binding Reviews}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:Review">
+                                <Frame BorderColor="Gray" Margin="5">
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding Content}" FontSize="16"/>
+                                        <Label Text="{Binding CreatedAt, StringFormat='{0:dd MMM yyyy HH:mm}'}"
+                           FontSize="12" TextColor="Gray"/>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
                 </VerticalStackLayout>
             </Frame>
-
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

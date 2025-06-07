@@ -15,6 +15,7 @@
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.100",
           "Microsoft.Maui.Controls.Compatibility": "8.0.100",
+          "Plugin.Maui.Audio": "3.1.1",
           "Refractored.MvvmHelpers": "1.6.2",
           "SQLitePCLRaw.core": "2.1.6",
           "SQLitePCLRaw.provider.dynamic_cdecl": "2.1.6",
@@ -495,6 +496,17 @@
           }
         }
       },
+      "Plugin.Maui.Audio/3.1.1": {
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.100"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plugin.Maui.Audio.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
       "Refractored.MvvmHelpers/1.6.2": {
         "dependencies": {
           "System.ValueTuple": "4.5.0"
@@ -804,6 +816,13 @@
       "sha512": "sha512-XW6cNzbGKDuzn+iCY1L9pNDm3pF78te8PXjKWEYk+rgePVPV/j2otr75Q5NMbWzsMF461Qq7aPJZKUQAQJNISQ==",
       "path": "microsoft.windowsappsdk/1.5.240802000",
       "hashPath": "microsoft.windowsappsdk.1.5.240802000.nupkg.sha512"
+    },
+    "Plugin.Maui.Audio/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jTsPSwCjGbw8VstgSz8jl/oMetnw5LuKj+BVg3Xs+cv9WOLL7SNPf2J8Z3V9ws8gVw9GzCp50Sz/G9bluUGmsg==",
+      "path": "plugin.maui.audio/3.1.1",
+      "hashPath": "plugin.maui.audio.3.1.1.nupkg.sha512"
     },
     "Refractored.MvvmHelpers/1.6.2": {
       "type": "package",
