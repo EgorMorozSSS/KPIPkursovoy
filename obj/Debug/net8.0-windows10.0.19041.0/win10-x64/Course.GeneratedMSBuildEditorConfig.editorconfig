@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.AddOrUpdateBo
 build_metadata.AdditionalFiles.TargetPath = Views\AddOrUpdateBookPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AddOrUpdateBookPage.xaml
 
+[C:/Users/Egor/source/repos/Course/Views/AdminDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.AdminDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AdminDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AdminDashboardPage.xaml
+
 [C:/Users/Egor/source/repos/Course/Views/BookDetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.BookDetailsPage.xaml
@@ -69,6 +75,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.BooklistHomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\BooklistHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\BooklistHomePage.xaml
+
+[C:/Users/Egor/source/repos/Course/Views/FavoritesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.FavoritesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FavoritesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FavoritesPage.xaml
 
 [C:/Users/Egor/source/repos/Course/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

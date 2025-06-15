@@ -11,6 +11,8 @@ namespace Course.Models
         public string Image { get; set; }
         public bool IsRead { get; set; }
         public string Genre { get; set; }
+        public int Likes { get; set; } = 0;           
+        public bool IsFavorite { get; set; } = false;
 
         [Indexed]
         public int AuthorId { get; set; }

@@ -14,7 +14,7 @@ namespace Course.ViewModels
     {
         private readonly IAuthService _authService;
         private readonly IBookService bookService;
-
+        private User _currentUser;
         public AddOrUpdateBookPageViewmodel(IBookService bookService, IAuthService authService)
         {
             this.bookService = bookService;

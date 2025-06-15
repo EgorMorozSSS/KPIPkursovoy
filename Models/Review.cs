@@ -20,9 +20,12 @@ namespace Course.Models
 
         public string Content { get; set; }
 
+        public int Rating { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         [Ignore]
         public User Author { get; set; }
+        [Ignore]
+        public string BookTitle { get; set; }
     }
 }

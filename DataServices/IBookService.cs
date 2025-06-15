@@ -9,5 +9,9 @@ namespace Course.DataServices
         Task<List<Book>> GetBooksAsync();
         Task<Book> GetBookAsync(int id);
         Task<ServiceResponse> DeleteBookAsync(int bookId);
+
+        Task<ServiceResponse> ToggleFavoriteAsync(Book book);
+
+        Task<ServiceResponse> LikeBookAsync(Book book);
     }
 }

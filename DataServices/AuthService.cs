@@ -75,7 +75,9 @@ namespace Course.DataServices
             {
                 if (!_isInitialized)
                 {
+                    await SetupDatabase();
                     await LoadCurrentUser();
+                    await EnsureAdminExistsAsync();
                     _isInitialized = true;
                 }
             }
@@ -151,5 +153,28 @@ namespace Course.DataServices
         {
             Preferences.Set(CurrentUserIdKey, user?.Id ?? -1);
         }
+        private async Task EnsureAdminExistsAsync()
+        {
+            await SetupDatabase();
+
+            const string adminEmail = "admin@mail.ru";
+            var adminExists = await UserExistsAsync(adminEmail);
+            if (!adminExists)
+            {
+                var adminUser = new User
+                {
+                    Email = adminEmail,
+                    PasswordHash = HashPassword("12345678"),
+                    Name = "Admin",
+                    Avatar = string.Empty,
+                    IsAdmin = true,
+                    Role = UserRole.Author
+                };
+
+                await _dbConnection.InsertAsync(adminUser);
+            }
+        }
+
+
     }
 }

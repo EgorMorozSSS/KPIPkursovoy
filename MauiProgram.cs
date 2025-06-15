@@ -39,6 +39,13 @@ namespace Course
             builder.Services.AddTransient<LoginPage>();
             builder.Services.AddTransient<UserProfilePage>();
             builder.Services.AddTransient<UserProfileViewModel>();
+            builder.Services.AddSingleton<IAuthService, AuthService>();
+            builder.Services.AddSingleton<IAdminService, AdminService>();
+            builder.Services.AddTransient<AdminDashboardViewModel>();
+            builder.Services.AddTransient<AdminDashboardPage>();
+            builder.Services.AddTransient<FavoritesPage>();
+            builder.Services.AddTransient<FavoritesViewModel>();
+
 
 #if DEBUG
             builder.Logging.AddDebug();

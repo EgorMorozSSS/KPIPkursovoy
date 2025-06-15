@@ -15,6 +15,7 @@ namespace Course.Models
         public string Avatar { get; set; }
         public string AvatarPath { get; set; }
         public UserRole Role { get; set; }
+        public bool IsAdmin { get; set; } = false;
     }
     public enum UserRole
     {

@@ -4,6 +4,7 @@ using Course.DataServices;
 using Course.Models;
 using System;
 using System.Threading.Tasks;
+using Course.Views;
 
 namespace Course.ViewModels
 {
@@ -24,6 +25,7 @@ namespace Course.ViewModels
         {
             _authService = authService ?? throw new ArgumentNullException(nameof(authService));
             LoadUserProfile();
+            _isDarkTheme = App.Current.UserAppTheme == AppTheme.Dark;
         }
 
         private async Task LoadUserProfile()
@@ -87,5 +89,23 @@ namespace Course.ViewModels
                 await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
             }
         }
+
+        [RelayCommand]
+        private async Task NavigateToFavorites()
+        {
+            await Shell.Current.GoToAsync(nameof(FavoritesPage));
+        }
+        private bool _isDarkTheme;
+
+        public bool IsDarkTheme
+        {
+            get => _isDarkTheme;
+            set
+            {
+                SetProperty(ref _isDarkTheme, value);
+                App.Current.UserAppTheme = value ? AppTheme.Dark : AppTheme.Light;
+            }
+        }
+
     }
 }

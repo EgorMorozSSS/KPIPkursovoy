@@ -56,7 +56,6 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
-
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="4.1.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
@@ -84,6 +83,12 @@
 		<Compile Update="Views\UserProfilePage.xaml.cs">
 			<DependentUpon>UserProfilePage.xaml</DependentUpon>
 		</Compile>
+		<Compile Update="Views\AdminDashboardViewModel.cs">
+			<DependentUpon>AdminDashboardViewModel.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\FavoritesPage.xaml.cs">
+			<DependentUpon>FavoritesPage.xaml</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -105,6 +110,13 @@
 		<MauiXaml Update="Views\UserProfilePage.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="Views\AdminDashboardPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\FavoritesPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+
 	</ItemGroup>
 
 </Project>

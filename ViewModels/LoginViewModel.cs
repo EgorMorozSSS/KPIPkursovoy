@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using Course.DataServices;
 using Course.Views;
+using Course.Models;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
@@ -9,6 +10,7 @@ namespace Course.ViewModels
 {
     public partial class LoginViewModel : ObservableValidator
     {
+        private User _currentUser;
         [ObservableProperty]
         [Required(ErrorMessage = "Email is required")]
         [EmailAddress(ErrorMessage = "Invalid email format")]
@@ -45,7 +47,17 @@ namespace Course.ViewModels
                 return;
             }
 
-            await Shell.Current.GoToAsync(nameof(BooklistHomePage));
+            _currentUser = user;
+
+            if (_currentUser.IsAdmin)
+            {
+                await Shell.Current.DisplayAlert("Admin Login", "Welcome, admin!", "OK");
+                await Shell.Current.GoToAsync(nameof(AdminDashboardPage));
+            }
+            else
+            {
+                await Shell.Current.GoToAsync(nameof(BooklistHomePage));
+            }
         }
 
         [RelayCommand]

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Course.Views.FavoritesPage"
+             xmlns:viewmodel="clr-namespace:Course.ViewModels"
+             xmlns:models="clr-namespace:Course.Models"
+             x:DataType="viewmodel:FavoritesViewModel"
+             Title="Избранные книги">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10">
+            <CollectionView ItemsSource="{Binding FavoriteBooks}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Book">
+                        <Frame Padding="5" Margin="2">
+                            <HorizontalStackLayout Spacing="10">
+                                <Image Source="{Binding Image}" WidthRequest="60" HeightRequest="90"/>
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Title}" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Genre}" FontAttributes="Italic"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

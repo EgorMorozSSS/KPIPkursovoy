@@ -13,6 +13,8 @@ namespace Course
             Routing.RegisterRoute(nameof(AddOrUpdateBookPage), typeof(AddOrUpdateBookPage));
             Routing.RegisterRoute(nameof(BookDetailsPage), typeof(BookDetailsPage));
             Routing.RegisterRoute(nameof(UserProfilePage), typeof(UserProfilePage));
+            Routing.RegisterRoute(nameof(AdminDashboardPage), typeof(AdminDashboardPage));
+            Routing.RegisterRoute(nameof(FavoritesPage), typeof(FavoritesPage));
         }
     }
 }

@@ -59,7 +59,30 @@
         <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.NavigateToHomeCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.AddOrUpdateBookPageViewmodel.NavigateToHome"/>.</summary>
         </member>
+        <member name="T:Course.ViewModels.AdminDashboardViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.AdminDashboardViewModel.Books">
+            <inheritdoc cref="F:Course.ViewModels.AdminDashboardViewModel.books"/>
+        </member>
+        <member name="P:Course.ViewModels.AdminDashboardViewModel.SelectedBook">
+            <inheritdoc cref="F:Course.ViewModels.AdminDashboardViewModel.selectedBook"/>
+        </member>
+        <member name="M:Course.ViewModels.AdminDashboardViewModel.OnSelectedBookChanged(Course.Models.Book)">
+            <summary>Executes the logic for when <see cref="P:Course.ViewModels.AdminDashboardViewModel.SelectedBook"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Course.ViewModels.AdminDashboardViewModel.SelectedBook"/> is changed.</remarks>
+        </member>
+        <member name="F:Course.ViewModels.AdminDashboardViewModel.deleteBookCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.AdminDashboardViewModel.DeleteBookCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.AdminDashboardViewModel.DeleteBookCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.AdminDashboardViewModel.DeleteBook(System.Int32)"/>.</summary>
+        </member>
         <member name="T:Course.ViewModels.BookDetailsPageViewmodel">
+            <inheritdoc/>
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
@@ -83,10 +106,31 @@
         <member name="P:Course.ViewModels.BookDetailsPageViewmodel.ManualSliderValue">
             <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._manualSliderValue"/>
         </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.NewReviewContent">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._newReviewContent"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.Reviews">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._reviews"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.BookListenStats">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._bookListenStats"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.BookDetailsStatsText">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._bookDetailsStatsText"/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.HasListened">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel.hasListened"/>
+        </member>
         <member name="M:Course.ViewModels.BookDetailsPageViewmodel.OnBookModelChanged(Course.Models.Book)">
             <summary>Executes the logic for when <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.BookModel"/> just changed.</summary>
             <param name="value">The new property value that was set.</param>
             <remarks>This method is invoked right after the value of <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.BookModel"/> is changed.</remarks>
+        </member>
+        <member name="F:Course.ViewModels.BookDetailsPageViewmodel.addReviewCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.AddReviewCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.AddReviewCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.AddReview"/>.</summary>
         </member>
         <member name="F:Course.ViewModels.BookDetailsPageViewmodel.playPauseCommand">
             <summary>The backing field for <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.PlayPauseCommand"/>.</summary>
@@ -106,7 +150,17 @@
         <member name="P:Course.ViewModels.BookDetailsPageViewmodel.RewindCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.Rewind(System.Object)"/>.</summary>
         </member>
+        <member name="F:Course.ViewModels.BookDetailsPageViewmodel.markAsListenedCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.MarkAsListenedCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.MarkAsListenedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.MarkAsListened"/>.</summary>
+        </member>
         <member name="T:Course.ViewModels.BooklistHomePageViewmodel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
@@ -120,14 +174,34 @@
         <member name="P:Course.ViewModels.BooklistHomePageViewmodel.GridVisibility">
             <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._gridVisibility"/>
         </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.NewReviewContent">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._newReviewContent"/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.Reviews">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._reviews"/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.SelectedBook">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._selectedBook"/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.CurrentUser">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._currentUser"/>
+        </member>
         <member name="P:Course.ViewModels.BooklistHomePageViewmodel.SearchText">
             <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._searchText"/>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.IsAuthor">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._isAuthor"/>
         </member>
         <member name="P:Course.ViewModels.BooklistHomePageViewmodel.SelectedGenre">
             <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._selectedGenre"/>
         </member>
-        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.IsAuthor">
-            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._isAuthor"/>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.NewReviewRating">
+            <inheritdoc cref="F:Course.ViewModels.BooklistHomePageViewmodel._newReviewRating"/>
+        </member>
+        <member name="M:Course.ViewModels.BooklistHomePageViewmodel.OnSelectedBookChanged(Course.Models.Book)">
+            <summary>Executes the logic for when <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.SelectedBook"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.SelectedBook"/> is changed.</remarks>
         </member>
         <member name="F:Course.ViewModels.BooklistHomePageViewmodel.searchBooksCommand">
             <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.SearchBooksCommand"/>.</summary>
@@ -176,6 +250,36 @@
         </member>
         <member name="P:Course.ViewModels.BooklistHomePageViewmodel.NavigateToProfileCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.NavigateToProfile"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.addReviewCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.AddReviewCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.AddReviewCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.AddReview"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.bookSelectedCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.BookSelectedCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.BookSelectedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.BookSelected(Course.Models.Book)"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.toggleFavoriteCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.ToggleFavoriteCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.ToggleFavoriteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.ToggleFavorite(Course.Models.Book)"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.BooklistHomePageViewmodel.likeBookCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.BooklistHomePageViewmodel.LikeBookCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.BooklistHomePageViewmodel.LikeBookCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BooklistHomePageViewmodel.LikeBook(Course.Models.Book)"/>.</summary>
+        </member>
+        <member name="T:Course.ViewModels.FavoritesViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.FavoritesViewModel.FavoriteBooks">
+            <inheritdoc cref="F:Course.ViewModels.FavoritesViewModel._favoriteBooks"/>
         </member>
         <member name="T:Course.ViewModels.LoginViewModel">
             <inheritdoc/>
@@ -243,6 +347,7 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:Course.ViewModels.UserProfileViewModel.Name">
             <inheritdoc cref="F:Course.ViewModels.UserProfileViewModel._name"/>
@@ -264,6 +369,12 @@
         </member>
         <member name="P:Course.ViewModels.UserProfileViewModel.SaveProfileCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.UserProfileViewModel.SaveProfile"/>.</summary>
+        </member>
+        <member name="F:Course.ViewModels.UserProfileViewModel.navigateToFavoritesCommand">
+            <summary>The backing field for <see cref="P:Course.ViewModels.UserProfileViewModel.NavigateToFavoritesCommand"/>.</summary>
+        </member>
+        <member name="P:Course.ViewModels.UserProfileViewModel.NavigateToFavoritesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.UserProfileViewModel.NavigateToFavorites"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
@@ -396,6 +507,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AddBookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Books">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Books" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedBook">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedBook" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookModel" generated properties.</summary>
         </member>
@@ -414,17 +531,41 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ManualSliderValue">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ManualSliderValue" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewReviewContent">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewReviewContent" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Reviews">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Reviews" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookListenStats">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookListenStats" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookDetailsStatsText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookDetailsStatsText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HasListened">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HasListened" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GridVisibility">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GridVisibility" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentUser">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentUser" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SearchText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SearchText" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsAuthor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsAuthor" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedGenre">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedGenre" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsAuthor">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsAuthor" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NewReviewRating">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NewReviewRating" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FavoriteBooks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FavoriteBooks" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
@@ -465,6 +606,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AddBookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AddBookModel" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Books">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Books" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedBook">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedBook" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookModel" generated properties.</summary>
         </member>
@@ -483,17 +630,41 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ManualSliderValue">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ManualSliderValue" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewReviewContent">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewReviewContent" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Reviews">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Reviews" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookListenStats">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookListenStats" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookDetailsStatsText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookDetailsStatsText" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HasListened">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HasListened" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GridVisibility">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GridVisibility" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentUser">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentUser" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SearchText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SearchText" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsAuthor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsAuthor" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedGenre">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedGenre" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsAuthor">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsAuthor" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NewReviewRating">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NewReviewRating" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FavoriteBooks">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FavoriteBooks" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>

@@ -41,6 +41,15 @@
             <Button Text="Save Profile" 
                     Command="{Binding SaveProfileCommand}"
                     HorizontalOptions="End"/>
+            <!-- Переключатель темы -->
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                <Label Text="Dark Theme" VerticalOptions="Center"/>
+                <CheckBox IsChecked="{Binding IsDarkTheme}" />
+            </HorizontalStackLayout>
+
+            <Button Text="Window of Favorites" 
+         Command="{Binding NavigateToFavoritesCommand}"
+         HorizontalOptions="End"/>
 
         </VerticalStackLayout>
     </ScrollView>

@@ -63,5 +63,17 @@ namespace Course.DataServices
 
         private static ServiceResponse SuccessMessage(int responseId) => new() { Flag = true, DatabaseResponseValue = responseId, Message = "Process Completed Successfully." };
         private static ServiceResponse ErrorMessage(int responseId) => new() { Flag = false, DatabaseResponseValue = responseId, Message = "Process failed... Please check and try again." };
+        public async Task<ServiceResponse> ToggleFavoriteAsync(Book book)
+        {
+            book.IsFavorite = !book.IsFavorite;
+            return await AddOrUpdateBookAsync(book);
+        }
+
+        public async Task<ServiceResponse> LikeBookAsync(Book book)
+        {
+            book.Likes += 1;
+            return await AddOrUpdateBookAsync(book);
+        }
+
     }
 }

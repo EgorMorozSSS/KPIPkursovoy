@@ -3,68 +3,199 @@
   "WorkspaceRootPath": "C:\\Users\\Egor\\source\\repos\\Course\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Egor\\source\\repos\\Course\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\bookdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\bookdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\bookdetailspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\bookdetailspageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\booklistenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\booklistenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\booklisthomepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\booklisthomepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\bookdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\bookdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\bookdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\bookdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\inverseboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:converters\\inverseboolconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\addorupdatebookpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\addorupdatebookpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\bookdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\bookdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\booklisthomepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\booklisthomepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\booklistenrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\booklistenrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\booklisthomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\booklisthomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\userprofilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\userprofilepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\course.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:course.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\userprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\userprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\favoritespage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\favoritespage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\favoritesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\favoritesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\favoritespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\favoritespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\extensions\\userroleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:extensions\\userroleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\booltofavoritetextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:converters\\booltofavoritetextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\booltoplaypauseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:converters\\booltoplaypauseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\booklisthomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\booklisthomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\admindashboardpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\admindashboardpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\addbookbaseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\addbookbaseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\addorupdatebookpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\addorupdatebookpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\addorupdatebookpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\addorupdatebookpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\admindashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\admindashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\addorupdatebookpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\addorupdatebookpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\stringnotemptyconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:converters\\stringnotemptyconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Egor\\source\\repos\\Course\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Egor\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\4.1.2\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -74,27 +205,7 @@
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:customcontrols\\customimagecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\addorupdatebookpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\addorupdatebookpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Egor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\course.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:course.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\addbookbaseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\addbookbaseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\addorupdatebookpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\addorupdatebookpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\timespantostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,14 +214,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\booltoplaypauseiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:converters\\booltoplaypauseiconconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\booltoplaypauseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:converters\\booltoplaypauseconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\converters\\timespantodoubleconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,31 +232,7 @@
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:models\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\extensions\\userroleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:extensions\\userroleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\dataservices\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:dataservices\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\registrationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -164,24 +243,8 @@
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\registrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A26D8181-FEE7-4A4E-890C-9CFC2EEA58AC}|Course.csproj|c:\\users\\egor\\source\\repos\\course\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -208,7 +271,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -224,33 +287,226 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Xamarin.Android.Common.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.154\\tools\\Xamarin.Android.Common.targets",
+              "ViewState": "AgIAAAwKAAAAAAAAAAAlwB0KAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-15T17:58:01.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\ReviewService.cs",
-              "RelativeDocumentMoniker": "DataServices\\ReviewService.cs",
-              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\ReviewService.cs",
-              "RelativeToolTip": "DataServices\\ReviewService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Title": "InverseBoolConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\InverseBoolConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\InverseBoolConverter.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\InverseBoolConverter.cs",
+              "RelativeToolTip": "Converters\\InverseBoolConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T21:07:50.872Z",
+              "WhenOpened": "2025-06-15T17:44:40.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BookListenService.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\BookListenService.cs",
+              "RelativeDocumentMoniker": "DataServices\\BookListenService.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\BookListenService.cs",
+              "RelativeToolTip": "DataServices\\BookListenService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAADwvzgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:32:22.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookListenRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\BookListenRecord.cs",
+              "RelativeDocumentMoniker": "Models\\BookListenRecord.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\BookListenRecord.cs",
+              "RelativeToolTip": "Models\\BookListenRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:31:54.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FavoritesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\FavoritesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\FavoritesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\FavoritesPage.xaml.cs",
+              "RelativeToolTip": "Views\\FavoritesPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T12:29:03.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FavoritesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\FavoritesPage.xaml",
+              "RelativeDocumentMoniker": "Views\\FavoritesPage.xaml",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\FavoritesPage.xaml",
+              "RelativeToolTip": "Views\\FavoritesPage.xaml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-13T12:28:52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FavoritesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\FavoritesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\FavoritesViewModel.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\FavoritesViewModel.cs",
+              "RelativeToolTip": "ViewModels\\FavoritesViewModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T12:22:27.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\UserProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\UserProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\UserProfilePage.xaml.cs",
+              "RelativeToolTip": "Views\\UserProfilePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T12:18:21.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\UserProfilePage.xaml",
+              "RelativeDocumentMoniker": "Views\\UserProfilePage.xaml",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\UserProfilePage.xaml",
+              "RelativeToolTip": "Views\\UserProfilePage.xaml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-13T12:18:15.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BoolToFavoriteTextConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\BoolToFavoriteTextConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\BoolToFavoriteTextConverter.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\BoolToFavoriteTextConverter.cs",
+              "RelativeToolTip": "Converters\\BoolToFavoriteTextConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T12:03:19.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AdminDashboardPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\AdminDashboardPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AdminDashboardPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\AdminDashboardPage.xaml.cs",
+              "RelativeToolTip": "Views\\AdminDashboardPage.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T09:19:58.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AdminDashboardPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\AdminDashboardPage.xaml",
+              "RelativeDocumentMoniker": "Views\\AdminDashboardPage.xaml",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\AdminDashboardPage.xaml",
+              "RelativeToolTip": "Views\\AdminDashboardPage.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-12T09:03:16.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdminDashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:46:51.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\AdminService.cs",
+              "RelativeDocumentMoniker": "DataServices\\AdminService.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\AdminService.cs",
+              "RelativeToolTip": "DataServices\\AdminService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:43:49.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\IAdminService.cs",
+              "RelativeDocumentMoniker": "DataServices\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\IAdminService.cs",
+              "RelativeToolTip": "DataServices\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T08:43:02.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "StringNotEmptyConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\StringNotEmptyConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\StringNotEmptyConverter.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\StringNotEmptyConverter.cs",
+              "RelativeToolTip": "Converters\\StringNotEmptyConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T05:56:35.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\ReviewService.cs",
+              "RelativeDocumentMoniker": "DataServices\\ReviewService.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\ReviewService.cs",
+              "RelativeToolTip": "DataServices\\ReviewService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T21:07:50.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Review.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\Review.cs",
               "RelativeToolTip": "Models\\Review.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T21:07:04.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T21:07:04.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 51,
               "Title": "Microsoft.Maui.Resizetizer.After.targets",
               "DocumentMoniker": "C:\\Users\\Egor\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
@@ -262,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 53,
               "Title": "BoolToPlayPauseIconConverter.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\BoolToPlayPauseIconConverter.cs",
               "RelativeDocumentMoniker": "Converters\\BoolToPlayPauseIconConverter.cs",
@@ -274,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 52,
               "Title": "TimeSpanToStringConverter.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\TimeSpanToStringConverter.cs",
               "RelativeDocumentMoniker": "Converters\\TimeSpanToStringConverter.cs",
@@ -286,19 +542,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "BoolToPlayPauseConverter.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\BoolToPlayPauseConverter.cs",
               "RelativeDocumentMoniker": "Converters\\BoolToPlayPauseConverter.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\BoolToPlayPauseConverter.cs",
               "RelativeToolTip": "Converters\\BoolToPlayPauseConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T14:55:08.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 54,
               "Title": "TimeSpanToDoubleConverter.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Converters\\TimeSpanToDoubleConverter.cs",
               "RelativeDocumentMoniker": "Converters\\TimeSpanToDoubleConverter.cs",
@@ -310,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 49,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Egor\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\4.1.2\\ReadMe.txt",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\communitytoolkit.maui.mediaelement\\4.1.2\\ReadMe.txt",
@@ -322,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 55,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -334,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 58,
               "Title": "Microsoft.NET.Sdk.DefaultItems.Shared.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
@@ -346,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 22,
               "Title": "UserRoleExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Extensions\\UserRoleExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\UserRoleExtensions.cs",
@@ -358,19 +614,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 13,
               "Title": "UserProfileViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\UserProfileViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UserProfileViewModel.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\UserProfileViewModel.cs",
               "RelativeToolTip": "ViewModels\\UserProfileViewModel.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAowFoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAmwGsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T08:05:14.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 63,
               "Title": "Microsoft.Maui.Controls.targets",
               "DocumentMoniker": "C:\\Users\\Egor\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.100\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\8.0.100\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
@@ -382,19 +638,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 30,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\LoginViewModel.cs",
               "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAIwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwD4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T07:38:41.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 65,
               "Title": "Xamarin.Android.Tooling.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.147\\tools\\Xamarin.Android.Tooling.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.147\\tools\\Xamarin.Android.Tooling.targets",
@@ -405,19 +661,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 29,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\LoginPage.xaml",
               "RelativeDocumentMoniker": "Views\\LoginPage.xaml",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\LoginPage.xaml",
               "RelativeToolTip": "Views\\LoginPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-19T06:08:52.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 64,
               "Title": "Xamarin.Android.Common.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.147\\tools\\Xamarin.Android.Common.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.147\\tools\\Xamarin.Android.Common.targets",
@@ -428,7 +684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 42,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
@@ -440,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 60,
               "Title": "RegistrationViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\RegistrationViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegistrationViewModel.cs",
@@ -452,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 59,
               "Title": "RegistrationPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\RegistrationPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\RegistrationPage.xaml.cs",
@@ -464,7 +720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 45,
               "Title": "RegistrationPage.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\RegistrationPage.xaml",
               "RelativeDocumentMoniker": "Views\\RegistrationPage.xaml",
@@ -476,30 +732,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 66,
               "Title": "Course",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Course.csproj",
               "RelativeDocumentMoniker": "Course.csproj",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Course.csproj",
               "RelativeToolTip": "Course.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-19T05:18:32.745Z"
+              "WhenOpened": "2025-05-19T05:18:32.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\AuthService.cs",
               "RelativeDocumentMoniker": "DataServices\\AuthService.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\AuthService.cs",
               "RelativeToolTip": "DataServices\\AuthService.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAuwJoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAqwKgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T05:16:46.987Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 26,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\IAuthService.cs",
               "RelativeDocumentMoniker": "DataServices\\IAuthService.cs",
@@ -511,44 +768,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:16:01.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T05:16:01.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 36,
               "Title": "AuthorService.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\AuthorService.cs",
               "RelativeDocumentMoniker": "DataServices\\AuthorService.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\AuthorService.cs",
               "RelativeToolTip": "DataServices\\AuthorService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T07:58:35.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "IAuthorService.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\IAuthorService.cs",
               "RelativeDocumentMoniker": "DataServices\\IAuthorService.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\IAuthorService.cs",
               "RelativeToolTip": "DataServices\\IAuthorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T07:45:49.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 46,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\Author.cs",
               "RelativeDocumentMoniker": "Models\\Author.cs",
@@ -556,12 +812,11 @@
               "RelativeToolTip": "Models\\Author.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T07:44:15.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T07:44:15.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 61,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
@@ -573,7 +828,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 62,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -585,7 +840,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 48,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
@@ -593,24 +848,23 @@
               "RelativeToolTip": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAqwEoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T07:25:20.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T07:25:20.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "BooklistHomePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\BooklistHomePage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\BooklistHomePage.xaml.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\BooklistHomePage.xaml.cs",
               "RelativeToolTip": "Views\\BooklistHomePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T07:23:30.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "BookDetailsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\BookDetailsPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\BookDetailsPage.xaml.cs",
@@ -623,106 +877,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BookDetailsPage.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\BookDetailsPage.xaml",
               "RelativeDocumentMoniker": "Views\\BookDetailsPage.xaml",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\BookDetailsPage.xaml",
               "RelativeToolTip": "Views\\BookDetailsPage.xaml",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-31T07:21:30.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BookDetailsPageViewmodel.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\BookDetailsPageViewmodel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BookDetailsPageViewmodel.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\BookDetailsPageViewmodel.cs",
               "RelativeToolTip": "ViewModels\\BookDetailsPageViewmodel.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAA1wJ8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAqwJ8AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T07:20:42.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BooklistHomePageViewmodel.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\BooklistHomePageViewmodel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BooklistHomePageViewmodel.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\BooklistHomePageViewmodel.cs",
               "RelativeToolTip": "ViewModels\\BooklistHomePageViewmodel.cs",
-              "ViewState": "AgIAALMAAAAAAAAAAAAQwMgAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAA0wFwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T07:17:14.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T07:17:14.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "BooklistHomePage.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\BooklistHomePage.xaml",
               "RelativeDocumentMoniker": "Views\\BooklistHomePage.xaml",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\BooklistHomePage.xaml",
               "RelativeToolTip": "Views\\BooklistHomePage.xaml",
-              "ViewState": "AgIAACkAAAAAAAAAAAAtwDoAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAgwHkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-31T07:13:25.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 19,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\AppShell.xaml.cs",
               "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T07:10:49.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 18,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\AppShell.xaml",
               "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-31T07:10:28.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "AddBookBaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\AddBookBaseViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AddBookBaseViewModel.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\AddBookBaseViewModel.cs",
               "RelativeToolTip": "ViewModels\\AddBookBaseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T06:33:58.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 40,
               "Title": "AddOrUpdateBookPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\AddOrUpdateBookPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AddOrUpdateBookPage.xaml.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\AddOrUpdateBookPage.xaml.cs",
               "RelativeToolTip": "Views\\AddOrUpdateBookPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T06:31:15.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 50,
               "Title": "CustomImageControl.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\CustomControls\\CustomImageControl.cs",
               "RelativeDocumentMoniker": "CustomControls\\CustomImageControl.cs",
@@ -734,20 +987,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "AddOrUpdateBookPageViewmodel.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\AddOrUpdateBookPageViewmodel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AddOrUpdateBookPageViewmodel.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\ViewModels\\AddOrUpdateBookPageViewmodel.cs",
               "RelativeToolTip": "ViewModels\\AddOrUpdateBookPageViewmodel.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAApwKsAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwH8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T06:27:58.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T06:27:58.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 38,
               "Title": "AddOrUpdateBookPage.xaml",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Views\\AddOrUpdateBookPage.xaml",
               "RelativeDocumentMoniker": "Views\\AddOrUpdateBookPage.xaml",
@@ -759,7 +1011,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 57,
               "Title": "Error.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\Error.cs",
               "RelativeDocumentMoniker": "Models\\Error.cs",
@@ -771,7 +1023,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 56,
               "Title": "ServiceResponse.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\ServiceResponse.cs",
               "RelativeDocumentMoniker": "Models\\ServiceResponse.cs",
@@ -789,57 +1041,56 @@
               "RelativeDocumentMoniker": "DataServices\\BookService.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\BookService.cs",
               "RelativeToolTip": "DataServices\\BookService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAYwEEAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T06:11:06.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T06:11:06.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Models\\Book.cs",
               "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA9wBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T06:09:54.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T06:09:54.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 23,
               "Title": "IBookService.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\IBookService.cs",
               "RelativeDocumentMoniker": "DataServices\\IBookService.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\DataServices\\IBookService.cs",
               "RelativeToolTip": "DataServices\\IBookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T06:07:55.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 15,
               "Title": "Course.csproj",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\Course.csproj",
               "RelativeDocumentMoniker": "Course.csproj",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\Course.csproj",
               "RelativeToolTip": "Course.csproj",
-              "ViewState": "AgIAACkAAAAAAAAAAAAcwD0AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAQwDgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T06:01:15.254Z"
+              "WhenOpened": "2025-03-31T06:01:15.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\Course\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
               "ToolTip": "C:\\Users\\Egor\\source\\repos\\Course\\MauiProgram.cs",
               "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA9wBsAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAwCgAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T06:01:16.245Z",
               "EditorCaption": ""
