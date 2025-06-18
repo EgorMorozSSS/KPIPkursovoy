@@ -6,103 +6,138 @@
              xmlns:converters="clr-namespace:Course.Converters"
              xmlns:controls="clr-namespace:Course.CustomControls"
              xmlns:models="clr-namespace:Course.Models"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:DataType="viewmodel:BookDetailsPageViewmodel"
-             Title="BookDetailsPage">
+             Title="Book Details"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource OffBlack}}">
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:StringNotEmptyConverter x:Key="StringNotEmptyConverter" />
+            <converters:BoolToPlayPauseConverter x:Key="BoolToPlayPauseConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ScrollView>
-        <VerticalStackLayout Margin="0,10,0,0">
-            <Frame>
-                <VerticalStackLayout>
-                    <controls:CustomImageControl Base64Source="{Binding BookModel.Image}" WidthRequest="500" HeightRequest="600"/>
-                    <Frame BorderColor="BlueViolet">
-                        <VerticalStackLayout Spacing="10">
-                            <!-- Детали книги -->
-                            
-                            <Frame>
-                                <VerticalStackLayout Spacing="20">
-                                    <Label Text="Пользователей прослушало книгу: " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookDetailsStatsText}" FontSize="16" TextColor="Gray" />
-                                </VerticalStackLayout>
-                            </Frame>
-                            
-                            <Frame>
-                                <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book SN: " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Id}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
-                                </VerticalStackLayout>
-                            </Frame>
+        <VerticalStackLayout Padding="15" Spacing="15">
+            <!-- Обложка книги -->
+            <Border Style="{StaticResource CardStyle}">
+                <controls:CustomImageControl Base64Source="{Binding BookModel.Image}" 
+                                             WidthRequest="300" 
+                                             HeightRequest="450"
+                                             HorizontalOptions="Center"/>
+            </Border>
 
-                            <Frame>
-                                <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book Title: " HorizontalOptions="Center" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Title}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
-                                </VerticalStackLayout>
-                            </Frame>
+            <!-- Информация о книге -->
+            <Border Style="{StaticResource CardStyle}">
+                <VerticalStackLayout Spacing="15">
+                    <!-- Основные детали -->
+                    <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto" 
+                          RowSpacing="10" ColumnSpacing="10">
 
-                            <Frame>
-                                <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book Description: " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Description}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
-                                </VerticalStackLayout>
-                            </Frame>
+                        <Label Text="Title:" 
+                               Style="{StaticResource FieldLabel}"
+                               Grid.Row="0" Grid.Column="0"/>
+                        <Label Text="{Binding BookModel.Title}" 
+                               Grid.Row="0" Grid.Column="1"/>
 
-                            <Frame>
-                                <VerticalStackLayout Spacing="20">
-                                    <Label Text="Book Genre: " HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18"/>
-                                    <Label Text="{Binding BookModel.Genre}" HorizontalOptions="CenterAndExpand" FontSize="18"/>
-                                </VerticalStackLayout>
-                            </Frame>
+                        <Label Text="Genre:" 
+                               Style="{StaticResource FieldLabel}"
+                               Grid.Row="1" Grid.Column="0"/>
+                        <Label Text="{Binding BookModel.Genre}" 
+                               Grid.Row="1" Grid.Column="1"/>
 
-                            <!-- Аудиоплеер UI -->
-                            <Slider Minimum="0"
-                                    Maximum="{Binding Duration.TotalSeconds}"
-                                    Value="{Binding ManualSliderValue, Mode=TwoWay}" />
+                        <Label Text="ID:" 
+                               Style="{StaticResource FieldLabel}"
+                               Grid.Row="2" Grid.Column="0"/>
+                        <Label Text="{Binding BookModel.Id}" 
+                               Grid.Row="2" Grid.Column="1"/>
 
-                            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                                <Label Text="{Binding CurrentPosition}" />
-                                <Label Text="/" />
-                                <Label Text="{Binding Duration}" />
-                            </HorizontalStackLayout>
+                        <Label Text="Listeners:" 
+                               Style="{StaticResource FieldLabel}"
+                               Grid.Row="3" Grid.Column="0"/>
+                        <Label Text="{Binding BookDetailsStatsText}" 
+                               Grid.Row="3" Grid.Column="1"/>
 
-                            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
-                                <Button Text="⏪-10" Command="{Binding RewindCommand}" CommandParameter="-10"/>
-                                <Button Text="⏪-15" Command="{Binding RewindCommand}" CommandParameter="-15"/>
-                                <Button Text="{Binding IsPlaying, Converter={StaticResource BoolToPlayPauseConverter}}" Command="{Binding PlayPauseCommand}" />
-                                <Button Text="⏩+10" Command="{Binding RewindCommand}" CommandParameter="10"/>
-                                <Button Text="⏪+15" Command="{Binding RewindCommand}" CommandParameter="15"/>
-                            </HorizontalStackLayout>
-                            
+                        <Label Text="Tags:" 
+                               Style="{StaticResource FieldLabel}"
+                               Grid.Row="4" Grid.Column="0"/>
+                        <Label Text="{Binding FormattedTags}" 
+                               Grid.Row="4" Grid.Column="1"/>
+                    </Grid>
 
-                            <!-- Отзывы -->
-                            <Label Text="Отзывы" FontAttributes="Bold" FontSize="18" />
-                            <CollectionView ItemsSource="{Binding Reviews}">
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate x:DataType="models:Review">
-                                        <Frame BorderColor="Gray" Margin="5">
-                                            <VerticalStackLayout>
-                                                <Label Text="{Binding Content}" FontSize="16"/>
-                                                <Label Text="{Binding CreatedAt, StringFormat='{0:dd MMM yyyy HH:mm}'}"
-                                                   FontSize="12" TextColor="Gray"/>
-                                            </VerticalStackLayout>
-                                        </Frame>
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>
-
-                            <!-- Добавление отзыва -->
-                            
-
-
-                        </VerticalStackLayout>
-                    </Frame>
+                    <!-- Описание -->
+                    <Label Text="Description:" Style="{StaticResource FieldLabel}"/>
+                    <Label Text="{Binding BookModel.Description}" 
+                           Style="{StaticResource BodyLabel}"/>
                 </VerticalStackLayout>
-            </Frame>
+            </Border>
+
+            <!-- Аудиоплеер -->
+            <Border Style="{StaticResource CardStyle}">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Audio Player" 
+                           Style="{StaticResource SubHeadline}" 
+                           HorizontalOptions="Center"/>
+
+                    <Slider Minimum="0"
+                            Maximum="{Binding Duration.TotalSeconds}"
+                            Value="{Binding ManualSliderValue, Mode=TwoWay}" 
+                            ThumbColor="{StaticResource Primary}"
+                            MinimumTrackColor="{StaticResource Primary}"/>
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                        <Label Text="{Binding CurrentPosition}" Style="{StaticResource BodyLabel}"/>
+                        <Label Text="/" Style="{StaticResource BodyLabel}"/>
+                        <Label Text="{Binding Duration}" Style="{StaticResource BodyLabel}"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                        <Button Text="⏪-10" 
+                                Command="{Binding RewindCommand}" 
+                                CommandParameter="-10"
+                                Style="{StaticResource IconButton}"/>
+                        <Button Text="⏪-15" 
+                                Command="{Binding RewindCommand}" 
+                                CommandParameter="-15"
+                                Style="{StaticResource IconButton}"/>
+                        <Button Text="{Binding IsPlaying, Converter={StaticResource BoolToPlayPauseConverter}}" 
+                                Command="{Binding PlayPauseCommand}" 
+                                Style="{StaticResource IconButton}"/>
+                        <Button Text="⏩+10" 
+                                Command="{Binding RewindCommand}" 
+                                CommandParameter="10"
+                                Style="{StaticResource IconButton}"/>
+                        <Button Text="⏩+15" 
+                                Command="{Binding RewindCommand}" 
+                                CommandParameter="15"
+                                Style="{StaticResource IconButton}"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Отзывы -->
+            <Border Style="{StaticResource CardStyle}">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Reviews" 
+                           Style="{StaticResource SubHeadline}" 
+                           HorizontalOptions="Center"/>
+
+                    <CollectionView ItemsSource="{Binding Reviews}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:Review">
+                                <Border Style="{StaticResource CardStyle}" Padding="10">
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding Content}" 
+                                               Style="{StaticResource BodyLabel}"/>
+                                        <Label Text="{Binding CreatedAt, StringFormat='Posted on {0:dd MMM yyyy HH:mm}'}"
+                                               Style="{StaticResource CaptionLabel}"/>
+                                    </VerticalStackLayout>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

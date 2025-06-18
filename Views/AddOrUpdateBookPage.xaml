@@ -4,72 +4,97 @@
              x:Class="Course.Views.AddOrUpdateBookPage"
              xmlns:viewmodel="clr-namespace:Course.ViewModels"
              x:DataType="viewmodel:AddOrUpdateBookPageViewmodel"
-             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              xmlns:controls="clr-namespace:Course.CustomControls"
              xmlns:models="clr-namespace:Course.Models"
-             Title="{Binding Title}">
+             xmlns:converters="clr-namespace:Course.Converters"
+             Title="{Binding Title}"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource OffBlack}}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:StringNotEmptyConverter x:Key="StringNotEmptyConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Home" Command="{Binding NavigateToHomeCommand}"></ToolbarItem>
+        <ToolbarItem Text="Home" Command="{Binding NavigateToHomeCommand}"/>
     </ContentPage.ToolbarItems>
 
-    <StackLayout>
-        <CollectionView IsVisible="{Binding ShowErrors}" ItemsSource="{Binding Errors}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Error">
-                    <VerticalStackLayout>
-                        <HorizontalStackLayout>
-                            <Label Text="{Binding Property}" FontAttributes="Bold" TextColor="IndianRed"></Label>
-                            <Label Text="{Binding Value}" TextColor="IndianRed"></Label>
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="15">
+            <Border Style="{StaticResource CardStyle}">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="{Binding Title}" 
+                           Style="{StaticResource SubHeadline}" 
+                           HorizontalOptions="Center"/>
+                    
+                    <!-- Основные поля -->
+                    <Label Text="Title:" Style="{StaticResource FieldLabel}"/>
+                    <Entry Text="{Binding AddBookModel.Title}" 
+                           Placeholder="Enter book title"
+                           Style="{StaticResource PrimaryEntry}"/>
+                    
+                    <Label Text="Description:" Style="{StaticResource FieldLabel}"/>
+                    <Editor Text="{Binding AddBookModel.Description}" 
+                            Placeholder="Enter book description"
+                            AutoSize="TextChanges"
+                            HeightRequest="100"
+                            Style="{StaticResource PrimaryEditor}"/>
+                    
+                    <Label Text="Genre:" Style="{StaticResource FieldLabel}"/>
+                    <Picker ItemsSource="{Binding Genres}" 
+                            SelectedItem="{Binding AddBookModel.Genre}"
+                            Title="Select Genre"
+                            Style="{StaticResource PrimaryPicker}"/>
+                    
+                    <!-- Изображение -->
+                    <Label Text="Book Cover:" Style="{StaticResource FieldLabel}"/>
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                        <Button Text="Select Image" 
+                                Command="{Binding SelectImageCommand}"
+                                Style="{StaticResource SecondaryButton}"
+                                Grid.Column="0"/>
+                        
+                        <HorizontalStackLayout Grid.Column="1" Spacing="5">
+                            <Image Source="{Binding ImageSourceFile}"  
+                                   WidthRequest="80" 
+                                   HeightRequest="120"
+                                   Aspect="AspectFit"/>
+                            <controls:CustomImageControl Base64Source="{Binding AddBookModel.Image}" 
+                                                         WidthRequest="80" 
+                                                         HeightRequest="120"
+                                                         Aspect="AspectFit"/>
                         </HorizontalStackLayout>
-                    </VerticalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-
-        <VerticalStackLayout Margin="0,10,0,0">
-            <inputLayout:SfTextInputLayout Hint="Book Title">
-                <Entry Text="{Binding AddBookModel.Title}" />
-            </inputLayout:SfTextInputLayout>
-            <BoxView></BoxView>
-
-            <inputLayout:SfTextInputLayout Hint="Book Description">
-                <Entry Text="{Binding AddBookModel.Description}" />
-            </inputLayout:SfTextInputLayout>
-            <BoxView></BoxView>
-
-            <inputLayout:SfTextInputLayout Hint="Book Genre">
-                <Picker ItemsSource="{Binding Genres}" 
-            SelectedItem="{Binding AddBookModel.Genre}"
-            Title="Select Genre"/>
-            </inputLayout:SfTextInputLayout>
-            
-            <BoxView></BoxView>
-
-            <HorizontalStackLayout>
-                <inputLayout:SfTextInputLayout WidthRequest="200">
-                    <Button Text="Browse Image" Command="{Binding SelectImageCommand}" HeightRequest="50"></Button>
-                </inputLayout:SfTextInputLayout>
-
-                <inputLayout:SfTextInputLayout WidthRequest="200">
-                    <HorizontalStackLayout>
-                        <Image Source="{Binding ImageSourceFile}"  WidthRequest="100" HeightRequest="150"/>
-                        <controls:CustomImageControl Base64Source="{Binding AddBookModel.Image}" WidthRequest="100" HeightRequest="150"/>
-                    </HorizontalStackLayout>
-                </inputLayout:SfTextInputLayout>
-                <!-- После элемента для изображения -->
-                
-            </HorizontalStackLayout>
-            <BoxView></BoxView>
-            <Button Text="Select Audio" 
-             Command="{Binding SelectAudioCommand}"
-             Margin="10"/>
-
-            <Label Text="{Binding AudioFileName}"
-            IsVisible="{Binding AudioFileName, Converter={x:StaticResource StringNotEmptyConverter}}"
-            FontAttributes="Italic"
-            Margin="10,0"/>
-            <Button Text="Save Data" Margin="10" Command="{Binding SaveDataCommand}"></Button>
+                    </Grid>
+                    
+                    <!-- Теги -->
+                    <Label Text="Tags (comma-separated):" Style="{StaticResource FieldLabel}"/>
+                    <Entry Text="{Binding TagsInput}" 
+                           Placeholder="e.g., history, adventure, classic"
+                           Style="{StaticResource PrimaryEntry}"/>
+                    
+                    <!-- Аудио -->
+                    <Label Text="Audio File:" Style="{StaticResource FieldLabel}"/>
+                    <Grid ColumnDefinitions="*,Auto">
+                        <Button Text="Select Audio" 
+                                Command="{Binding SelectAudioCommand}"
+                                Style="{StaticResource SecondaryButton}"
+                                Grid.Column="0"/>
+                        
+                        <Label Text="{Binding AudioFileName}"
+                               IsVisible="{Binding AudioFileName, Converter={StaticResource StringNotEmptyConverter}}"
+                               Style="{StaticResource CaptionLabel}"
+                               VerticalOptions="Center"
+                               Grid.Column="1"/>
+                    </Grid>
+                    
+                    <!-- Кнопка сохранения -->
+                    <Button Text="Save Book" 
+                            Command="{Binding SaveDataCommand}"
+                            Style="{StaticResource PrimaryButton}"
+                            Margin="0,20,0,0"/>
+                </VerticalStackLayout>
+            </Border>
         </VerticalStackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -17,6 +17,9 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
+        <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.TagsInput">
+            <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._tagsInput"/>
+        </member>
         <member name="P:Course.ViewModels.AddOrUpdateBookPageViewmodel.ShowErrors">
             <inheritdoc cref="F:Course.ViewModels.AddOrUpdateBookPageViewmodel._showErrors"/>
         </member>
@@ -86,7 +89,9 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
-            <inheritdoc/>
+        </member>
+        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.FormattedTags">
+            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._formattedTags"/>
         </member>
         <member name="P:Course.ViewModels.BookDetailsPageViewmodel.BookModel">
             <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._bookModel"/>
@@ -111,9 +116,6 @@
         </member>
         <member name="P:Course.ViewModels.BookDetailsPageViewmodel.Reviews">
             <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._reviews"/>
-        </member>
-        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.BookListenStats">
-            <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._bookListenStats"/>
         </member>
         <member name="P:Course.ViewModels.BookDetailsPageViewmodel.BookDetailsStatsText">
             <inheritdoc cref="F:Course.ViewModels.BookDetailsPageViewmodel._bookDetailsStatsText"/>
@@ -149,12 +151,6 @@
         </member>
         <member name="P:Course.ViewModels.BookDetailsPageViewmodel.RewindCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.Rewind(System.Object)"/>.</summary>
-        </member>
-        <member name="F:Course.ViewModels.BookDetailsPageViewmodel.markAsListenedCommand">
-            <summary>The backing field for <see cref="P:Course.ViewModels.BookDetailsPageViewmodel.MarkAsListenedCommand"/>.</summary>
-        </member>
-        <member name="P:Course.ViewModels.BookDetailsPageViewmodel.MarkAsListenedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Course.ViewModels.BookDetailsPageViewmodel.MarkAsListened"/>.</summary>
         </member>
         <member name="T:Course.ViewModels.BooklistHomePageViewmodel">
             <inheritdoc/>
@@ -495,6 +491,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TagsInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TagsInput" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ShowErrors">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ShowErrors" generated properties.</summary>
         </member>
@@ -512,6 +511,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedBook">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedBook" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FormattedTags">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FormattedTags" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookModel" generated properties.</summary>
@@ -536,9 +538,6 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Reviews">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Reviews" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookListenStats">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookListenStats" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookDetailsStatsText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookDetailsStatsText" generated properties.</summary>
@@ -594,6 +593,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TagsInput">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TagsInput" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ShowErrors">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ShowErrors" generated properties.</summary>
         </member>
@@ -611,6 +613,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedBook">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedBook" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FormattedTags">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FormattedTags" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookModel">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookModel" generated properties.</summary>
@@ -635,9 +640,6 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Reviews">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Reviews" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookListenStats">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookListenStats" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookDetailsStatsText">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookDetailsStatsText" generated properties.</summary>

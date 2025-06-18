@@ -1,2 +1,2 @@
-AdbTarget=
+AdbTarget=-s RZCW11JCCPL
 AdbOptions=

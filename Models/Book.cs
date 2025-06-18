@@ -14,6 +14,8 @@ namespace Course.Models
         public int Likes { get; set; } = 0;           
         public bool IsFavorite { get; set; } = false;
 
+        public string Tags { get; set; }
+
         [Indexed]
         public int AuthorId { get; set; }
 

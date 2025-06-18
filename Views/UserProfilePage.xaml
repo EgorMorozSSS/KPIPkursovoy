@@ -10,47 +10,64 @@
         <VerticalStackLayout Padding="20" Spacing="20">
 
             <!-- Аватар -->
-            <Frame HorizontalOptions="Center" 
-                   CornerRadius="100"
-                   HeightRequest="150"
-                   WidthRequest="150"
-                   Padding="0">
+            <Border Style="{StaticResource CardStyle}"
+                    HorizontalOptions="Center" 
+                    HeightRequest="150"
+                    WidthRequest="150">
                 <Image Source="{Binding AvatarImage}"
                        Aspect="AspectFill"
                        HeightRequest="150"
                        WidthRequest="150"/>
-            </Frame>
+            </Border>
 
             <Button Text="Change Avatar" 
                     Command="{Binding ChangeAvatarCommand}"
+                    Style="{StaticResource SecondaryButton}"
                     HorizontalOptions="Center"/>
 
             <!-- Информация -->
-            <VerticalStackLayout Spacing="10">
-                <Label Text="Name:" FontAttributes="Bold"/>
-                <Entry Text="{Binding Name}" 
-                       Placeholder="Enter your name"/>
+            <Border Style="{StaticResource CardStyle}">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Profile Information" 
+                           Style="{StaticResource SubHeadline}" 
+                           HorizontalOptions="Center"/>
 
-                <Label Text="Email:" FontAttributes="Bold"/>
-                <Entry Text="{Binding Email}" 
-                       Placeholder="Enter email"
-                       IsEnabled="False"/>
-            </VerticalStackLayout>
+                    <Label Text="Name:" Style="{StaticResource FieldLabel}"/>
+                    <Entry Text="{Binding Name}" 
+                           Placeholder="Enter your name"/>
+
+                    <Label Text="Email:" Style="{StaticResource FieldLabel}"/>
+                    <Entry Text="{Binding Email}" 
+                           Placeholder="Enter email"
+                           IsEnabled="False"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Настройки -->
+            <Border Style="{StaticResource CardStyle}">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Preferences" 
+                           Style="{StaticResource SubHeadline}" 
+                           HorizontalOptions="Center"/>
+
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="Dark Theme" 
+                               VerticalOptions="Center"
+                               Style="{StaticResource FieldLabel}"/>
+                        <CheckBox IsChecked="{Binding IsDarkTheme}" />
+                    </HorizontalStackLayout>
+
+                    <Button Text="Favorites" 
+                            Command="{Binding NavigateToFavoritesCommand}"
+                            Style="{StaticResource SecondaryButton}"/>
+                </VerticalStackLayout>
+            </Border>
 
             <!-- Кнопка сохранения -->
             <Button Text="Save Profile" 
                     Command="{Binding SaveProfileCommand}"
+                    Style="{StaticResource PrimaryButton}"
                     HorizontalOptions="End"/>
-            <!-- Переключатель темы -->
-            <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                <Label Text="Dark Theme" VerticalOptions="Center"/>
-                <CheckBox IsChecked="{Binding IsDarkTheme}" />
-            </HorizontalStackLayout>
-
-            <Button Text="Window of Favorites" 
-         Command="{Binding NavigateToFavoritesCommand}"
-         HorizontalOptions="End"/>
-
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

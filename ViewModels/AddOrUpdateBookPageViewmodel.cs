@@ -15,6 +15,8 @@ namespace Course.ViewModels
         private readonly IAuthService _authService;
         private readonly IBookService bookService;
         private User _currentUser;
+        [ObservableProperty]
+        private string _tagsInput;
         public AddOrUpdateBookPageViewmodel(IBookService bookService, IAuthService authService)
         {
             this.bookService = bookService;
@@ -66,6 +68,8 @@ namespace Course.ViewModels
                 _addBookModel = new Book();
                 OnPropertyChanged(nameof(AddBookModel));
             }
+
+            _tagsInput = newValue.Tags;
         }
 
         [RelayCommand]
@@ -131,7 +135,7 @@ namespace Course.ViewModels
                     return;
                 }
                 AddBookModel.AuthorId = user.Id;
-
+                AddBookModel.Tags = _tagsInput;
                 Errors.Clear();
                 ShowErrors = false;
 

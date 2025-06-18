@@ -5,25 +5,48 @@
              xmlns:viewmodel="clr-namespace:Course.ViewModels"
              xmlns:models="clr-namespace:Course.Models"
              x:DataType="viewmodel:FavoritesViewModel"
-             Title="Избранные книги">
+             Title="Favorite Books"
+             BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource OffBlack}}">
 
     <ScrollView>
-        <VerticalStackLayout Padding="10" Spacing="10">
-            <CollectionView ItemsSource="{Binding FavoriteBooks}">
+        <VerticalStackLayout Padding="15" Spacing="15">
+            <Label Text="Favorite Books" 
+                   Style="{StaticResource Headline}" 
+                   HorizontalOptions="Center"/>
+
+            <CollectionView ItemsSource="{Binding FavoriteBooks}"
+                            EmptyView="No favorite books yet">
                 <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical" />
+                    <GridItemsLayout Orientation="Vertical" 
+                                     Span="2" 
+                                     VerticalItemSpacing="10"
+                                     HorizontalItemSpacing="10"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Book">
-                        <Frame Padding="5" Margin="2">
-                            <HorizontalStackLayout Spacing="10">
-                                <Image Source="{Binding Image}" WidthRequest="60" HeightRequest="90"/>
-                                <VerticalStackLayout>
-                                    <Label Text="{Binding Title}" FontAttributes="Bold"/>
-                                    <Label Text="{Binding Genre}" FontAttributes="Italic"/>
-                                </VerticalStackLayout>
-                            </HorizontalStackLayout>
-                        </Frame>
+                        <Border Style="{StaticResource CardStyle}">
+                            <Grid RowDefinitions="Auto,Auto" 
+                                  ColumnDefinitions="Auto,*"
+                                  RowSpacing="5">
+                                <Image Source="{Binding Image}" 
+                                       Aspect="AspectFill"
+                                       WidthRequest="80" 
+                                       HeightRequest="120"
+                                       Grid.RowSpan="2"/>
+
+                                <Label Text="{Binding Title}" 
+                                       FontAttributes="Bold"
+                                       Style="{StaticResource FieldLabel}"
+                                       Grid.Column="1"
+                                       Grid.Row="0"/>
+
+                                <Label Text="{Binding Genre}" 
+                                       FontAttributes="Italic"
+                                       Style="{StaticResource CaptionLabel}"
+                                       Grid.Column="1"
+                                       Grid.Row="1"/>
+                            </Grid>
+                        </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
