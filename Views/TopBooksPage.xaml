@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodel="clr-namespace:Course.ViewModels"
+    xmlns:models="clr-namespace:Course.Models"
+    x:Class="Course.Views.TopBooksPage"
+    x:DataType="viewmodel:TopBooksPageViewModel"
+    Title="Топ 3 книги">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Самые популярные книги по прослушиваниям" 
+                   FontSize="20" FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <CollectionView ItemsSource="{Binding TopBooks}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Book">
+                        <Frame Padding="10" Margin="5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="18"/>
+                                <Label Text="{Binding Genre}" FontAttributes="Italic"/>
+                                <Label Text="{Binding Description}" />
+                                <Label Text="Прослушиваний: " FontAttributes="Bold"/>
+                                <Label Text="{Binding ListenCount}" FontSize="16"/>
+                                <Button Text="Подробнее"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:TopBooksPageViewModel}}, Path=NavigateToDetailsCommand}"
+                            CommandParameter="{Binding .}"
+                            HorizontalOptions="End" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

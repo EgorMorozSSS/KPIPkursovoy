@@ -15,6 +15,7 @@ namespace Course
             Routing.RegisterRoute(nameof(UserProfilePage), typeof(UserProfilePage));
             Routing.RegisterRoute(nameof(AdminDashboardPage), typeof(AdminDashboardPage));
             Routing.RegisterRoute(nameof(FavoritesPage), typeof(FavoritesPage));
+            Routing.RegisterRoute(nameof(TopBooksPage), typeof(TopBooksPage));
         }
     }
 }

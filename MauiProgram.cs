@@ -45,6 +45,8 @@ namespace Course
             builder.Services.AddTransient<AdminDashboardPage>();
             builder.Services.AddTransient<FavoritesPage>();
             builder.Services.AddTransient<FavoritesViewModel>();
+            builder.Services.AddTransient<TopBooksPage>();
+            builder.Services.AddTransient<TopBooksPageViewModel>();
 
 
 #if DEBUG

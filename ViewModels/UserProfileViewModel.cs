@@ -106,6 +106,11 @@ namespace Course.ViewModels
                 App.Current.UserAppTheme = value ? AppTheme.Dark : AppTheme.Light;
             }
         }
+        [RelayCommand]
+        private async Task NavigateToTopBooks()
+        {
+            await Shell.Current.GoToAsync(nameof(TopBooksPage));
+        }
 
     }
 }

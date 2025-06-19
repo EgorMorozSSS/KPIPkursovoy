@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Course.DataServices;
 using Course.Models;
+using Course.Views;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
@@ -29,5 +31,17 @@ namespace Course.ViewModels
             FavoriteBooks = new ObservableCollection<Book>(favorites);
 
         }
+        [RelayCommand]
+        private async Task NavigateToDetails(Book book)
+        {
+            if (book == null) return;
+
+            var navigationParameter = new Dictionary<string, object>
+    {
+        { "ViewBookDetails", book }
+    };
+            await Shell.Current.GoToAsync(nameof(BookDetailsPage), navigationParameter);
+        }
+
     }
 }

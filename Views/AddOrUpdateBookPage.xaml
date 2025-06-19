@@ -69,27 +69,28 @@
                     
                     <!-- Теги -->
                     <Label Text="Tags (comma-separated):" Style="{StaticResource FieldLabel}"/>
-                    <Entry Text="{Binding TagsInput}" 
+                    <Entry Text="{Binding TagsInput, Mode=TwoWay}" 
                            Placeholder="e.g., history, adventure, classic"
                            Style="{StaticResource PrimaryEntry}"/>
                     
                     <!-- Аудио -->
-                    <Label Text="Audio File:" Style="{StaticResource FieldLabel}"/>
+                    <Label Text="Аудио файл:" Style="{StaticResource FieldLabel}"/>
                     <Grid ColumnDefinitions="*,Auto">
                         <Button Text="Select Audio" 
                                 Command="{Binding SelectAudioCommand}"
                                 Style="{StaticResource SecondaryButton}"
                                 Grid.Column="0"/>
-                        
+
                         <Label Text="{Binding AudioFileName}"
                                IsVisible="{Binding AudioFileName, Converter={StaticResource StringNotEmptyConverter}}"
                                Style="{StaticResource CaptionLabel}"
                                VerticalOptions="Center"
                                Grid.Column="1"/>
                     </Grid>
-                    
+
+
                     <!-- Кнопка сохранения -->
-                    <Button Text="Save Book" 
+                    <Button Text="" 
                             Command="{Binding SaveDataCommand}"
                             Style="{StaticResource PrimaryButton}"
                             Margin="0,20,0,0"/>

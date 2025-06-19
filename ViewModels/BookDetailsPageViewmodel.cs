@@ -13,13 +13,13 @@ namespace Course.ViewModels;
 public partial class BookDetailsPageViewmodel : ObservableObject
 {
     private readonly IAudioManager _audioManager;
-    private IAudioPlayer _player;
-    private User _currentUser;
+    private readonly BookListenService _listenService = new();
     private readonly ReviewService _reviewService = new();
+    private IAudioPlayer _player;
     private IDispatcherTimer _timer;
+    private User _currentUser;
     private bool _hasRecordedListen = false;
-    [ObservableProperty]
-    private string _formattedTags;
+
     [ObservableProperty] private Book _bookModel;
     [ObservableProperty] private TimeSpan _currentPosition;
     [ObservableProperty] private TimeSpan _duration;
@@ -28,12 +28,14 @@ public partial class BookDetailsPageViewmodel : ObservableObject
     [ObservableProperty] private double _manualSliderValue;
     [ObservableProperty] private string _newReviewContent;
     [ObservableProperty] private ObservableCollection<Review> _reviews;
+    [ObservableProperty] private string _formattedTags;
     [ObservableProperty] private string _bookDetailsStatsText = "Loading...";
     [ObservableProperty] private bool hasListened;
 
     public BookDetailsPageViewmodel(IAudioManager audioManager)
     {
         _audioManager = audioManager;
+
         _timer = Application.Current.Dispatcher.CreateTimer();
         _timer.Interval = TimeSpan.FromMilliseconds(500);
         _timer.Tick += async (_, _) => await UpdatePosition();
@@ -55,7 +57,7 @@ public partial class BookDetailsPageViewmodel : ObservableObject
     {
         LoadAudio(value.AudioFilePath);
         LoadReviews();
-        _formattedTags = value.Tags;
+        FormattedTags = value.Tags;
         _ = CheckIfUserListened();
         _ = TryInitializeBookStats();
     }
@@ -69,24 +71,23 @@ public partial class BookDetailsPageViewmodel : ObservableObject
     }
 
     private async Task UpdateBookStatsDisplay()
-{
-    try
     {
-        var service = new BookListenService();
-        int count = await service.GetUsersWhoListenedToBookAsync(BookModel.Id);
-        
-        MainThread.BeginInvokeOnMainThread(() =>
+        try
         {
-            BookDetailsStatsText = $"{count}";
-        });
+            int count = await _listenService.GetUsersWhoListenedToBookAsync(BookModel.Id);
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                BookDetailsStatsText = $"{count}";
+            });
+        }
+        catch
+        {
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                BookDetailsStatsText = "Ошибка загрузки";
+            });
+        }
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Ошибка при загрузке статистики: {ex.Message}");
-        BookDetailsStatsText = "Ошибка загрузки";
-    }
-}
-
 
     private async void LoadReviews()
     {
@@ -128,19 +129,39 @@ public partial class BookDetailsPageViewmodel : ObservableObject
                 Reviews.Insert(0, review);
             });
         }
-        catch (Exception ex)
+        catch
         {
-            Console.WriteLine($"Ошибка при добавлении отзыва: {ex.Message}");
+            // Ошибка при добавлении отзыва
+        }
+    }
+
+    [RelayCommand]
+    private async Task MarkAsListened()
+    {
+        if (BookModel == null || CurrentUser == null || HasListened)
+            return;
+
+        var already = await _listenService.HasUserListenedAsync(CurrentUser.Id, BookModel.Id);
+        if (!already)
+        {
+            await _listenService.AddListenAsync(CurrentUser.Id, BookModel.Id);
+            HasListened = true;
+
+            int count = await _listenService.GetUsersWhoListenedToBookAsync(BookModel.Id);
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                BookDetailsStatsText = $"{count}";
+            });
+        }
+        else
+        {
+            HasListened = true;
         }
     }
 
     private void LoadAudio(string path)
     {
-        if (!File.Exists(path))
-        {
-            Console.WriteLine("Файл не найден: " + path);
-            return;
-        }
+        if (!File.Exists(path)) return;
 
         var fileStream = File.OpenRead(path);
         _player = _audioManager.CreatePlayer(fileStream);
@@ -182,22 +203,21 @@ public partial class BookDetailsPageViewmodel : ObservableObject
 
             if (CurrentUser != null && BookModel != null)
             {
-                var listenService = new BookListenService();
-                var already = await listenService.HasUserListenedAsync(CurrentUser.Id, BookModel.Id);
+                bool already = await _listenService.HasUserListenedAsync(CurrentUser.Id, BookModel.Id);
                 if (!already)
                 {
-                    await listenService.AddListenAsync(CurrentUser.Id, BookModel.Id);
+                    await _listenService.AddListenAsync(CurrentUser.Id, BookModel.Id);
                     HasListened = true;
 
-                    // Обновление счетчика прямо здесь
-                    int count = await listenService.GetUsersWhoListenedToBookAsync(BookModel.Id);
-                    BookDetailsStatsText = $"{count}";
-                    Console.WriteLine("Прослушивание засчитано, счетчик обновлен");
+                    int count = await _listenService.GetUsersWhoListenedToBookAsync(BookModel.Id);
+                    MainThread.BeginInvokeOnMainThread(() =>
+                    {
+                        BookDetailsStatsText = $"{count}";
+                    });
                 }
                 else
                 {
                     HasListened = true;
-                    Console.WriteLine("Пользователь уже слушал книгу");
                 }
             }
         }
@@ -222,7 +242,7 @@ public partial class BookDetailsPageViewmodel : ObservableObject
         };
 
         if (_player != null)
-            _player.Volume = 1.0; // громкость, если плеер не поддерживает скорость
+            _player.Volume = 1.0;
     }
 
     [RelayCommand]
@@ -243,8 +263,7 @@ public partial class BookDetailsPageViewmodel : ObservableObject
     {
         if (CurrentUser == null || BookModel == null) return;
 
-        var listenService = new BookListenService();
-        HasListened = await listenService.HasUserListenedAsync(CurrentUser.Id, BookModel.Id);
+        HasListened = await _listenService.HasUserListenedAsync(CurrentUser.Id, BookModel.Id);
     }
 
     private double Clamp(double val, double min, double max) =>

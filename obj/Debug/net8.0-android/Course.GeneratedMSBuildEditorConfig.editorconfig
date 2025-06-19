@@ -90,6 +90,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.RegistrationP
 build_metadata.AdditionalFiles.TargetPath = Views\RegistrationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RegistrationPage.xaml
 
+[C:/Users/Egor/source/repos/Course/Views/TopBooksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.TopBooksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TopBooksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TopBooksPage.xaml
+
 [C:/Users/Egor/source/repos/Course/Views/UserProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Course.Views.UserProfilePage.xaml

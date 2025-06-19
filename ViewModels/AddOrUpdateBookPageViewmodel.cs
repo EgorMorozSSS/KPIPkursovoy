@@ -135,7 +135,7 @@ namespace Course.ViewModels
                     return;
                 }
                 AddBookModel.AuthorId = user.Id;
-                AddBookModel.Tags = _tagsInput;
+                AddBookModel.Tags = TagsInput?.Trim();
                 Errors.Clear();
                 ShowErrors = false;
 
@@ -239,7 +239,7 @@ namespace Course.ViewModels
                 Debug.WriteLine($"Toast failed: {ex.Message}");
             }
         }
-
+        
         [RelayCommand]
         private async Task NavigateToHome() => await Shell.Current.GoToAsync("..", true);
     }

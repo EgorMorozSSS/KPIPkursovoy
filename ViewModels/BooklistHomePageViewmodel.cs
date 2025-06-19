@@ -25,7 +25,7 @@ namespace Course.ViewModels
         [ObservableProperty]
         private int _newReviewRating = 5;  // По умолчанию 5
         public ObservableCollection<int> RatingOptions { get; } = new ObservableCollection<int> { 1, 2, 3, 4, 5 };
-
+        private readonly BookListenService _bookListenService = new();
         private readonly ReviewService _reviewService = new();
         private readonly IBookService bookService;
         private readonly IAuthService _authService;
@@ -80,25 +80,53 @@ namespace Course.ViewModels
             GridVisibility = false;
             await Task.Delay(1000);
 
-            var results = await bookService.GetBooksAsync();
+            var results = await bookService.GetBooksAsync(); // Загружаем все книги с сервера/БД
 
             if (results.Count > 0)
             {
-                AllBooks = results.Select(book => new Book()
-                {
-                    Id = book.Id,
-                    Title = book.Title,
-                    Description = book.Description.Length > 30 ? book.Description.Substring(0, 30) + "..." : book.Description,
-                    Image = book.Image,
-                    Genre = book.Genre,
-                    Likes = book.Likes,
-                    IsFavorite = book.IsFavorite
-                }).ToList();
+                AllBooks = new();
 
-                FilterBooksByGenre();
+                // Получаем текущего пользователя, чтобы узнать, прослушивал ли он каждую книгу
+                var currentUser = await _authService.GetCurrentUserAsync();
+
+                foreach (var book in results)
+                {
+                    // Количество уникальных пользователей, прослушавших книгу
+                    var listenCount = await _bookListenService.GetUsersWhoListenedToBookAsync(book.Id);
+
+                    // Проверка: слушал ли эту книгу текущий пользователь
+                    var hasListened = await _bookListenService.HasUserListenedAsync(currentUser.Id, book.Id);
+
+                    // Добавляем в список новую модель книги с дополнительной информацией
+                    AllBooks.Add(new Book
+                    {
+                        Id = book.Id,
+                        Title = book.Title,
+                        Description = book.Description.Length > 30 ? book.Description.Substring(0, 30) + "..." : book.Description,
+                        Image = book.Image,
+                        Genre = book.Genre,
+                        Likes = book.Likes,
+                        IsFavorite = book.IsFavorite,
+
+                        // 👇 Новые поля
+                        ListenCount = listenCount,
+                        HasUserListened = hasListened
+                    });
+                }
+
+                FilterBooksByGenre(); // Фильтрация по жанру/поиску
             }
 
             GridVisibility = true;
+        }
+
+        [RelayCommand]
+        private async Task ShowListenersInfo(Book book)
+        {
+            if (book == null) return;
+
+            int count = await _bookListenService.GetUsersWhoListenedToBookAsync(book.Id);
+            await Shell.Current.DisplayAlert("Прослушивания", $"Книгу прослушали {count} пользовател(ей).", "ОК");
         }
 
         [RelayCommand]
@@ -204,6 +232,27 @@ namespace Course.ViewModels
                 Console.WriteLine($"Error adding review: {ex.Message}");
             }
         }
+        [RelayCommand]
+        private async Task MarkAsListened(Book book)
+        {
+            if (book == null || _currentUser == null || book.HasUserListened)
+                return;
+
+            await _bookListenService.AddListenAsync(_currentUser.Id, book.Id);
+            book.HasUserListened = true;
+            book.ListenCount += 1;
+
+            // Обновим UI
+            var index = Books.IndexOf(book);
+            if (index >= 0)
+            {
+                Books.RemoveAt(index);
+                Books.Insert(index, book);
+            }
+
+            await Toast.Make("Книга отмечена как прослушанная").Show();
+        }
+
         partial void OnSelectedBookChanged(Book value)
         {
             if (value != null)

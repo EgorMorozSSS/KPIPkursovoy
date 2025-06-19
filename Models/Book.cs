@@ -13,6 +13,8 @@ namespace Course.Models
         public string Genre { get; set; }
         public int Likes { get; set; } = 0;           
         public bool IsFavorite { get; set; } = false;
+        public int ListenCount { get; set; }
+        public bool HasUserListened { get; set; } 
 
         public string Tags { get; set; }
 

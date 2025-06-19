@@ -1,16 +1,11 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Course.Models;
 
 namespace Course.DataServices
 {
     internal class BookListenService
     {
-        private SQLiteAsyncConnection _db;
+        private readonly SQLiteAsyncConnection _db;
 
         public BookListenService()
         {
@@ -21,11 +16,11 @@ namespace Course.DataServices
 
         public async Task AddListenAsync(int userId, int bookId)
         {
-            var alreadyListened = await _db.Table<BookListenRecord>()
+            var existing = await _db.Table<BookListenRecord>()
                 .Where(r => r.UserId == userId && r.BookId == bookId)
                 .FirstOrDefaultAsync();
 
-            if (alreadyListened == null)
+            if (existing == null)
             {
                 await _db.InsertAsync(new BookListenRecord
                 {
@@ -33,30 +28,16 @@ namespace Course.DataServices
                     BookId = bookId,
                     ListenedAt = DateTime.UtcNow
                 });
-                Console.WriteLine("Слушание добавлено");
             }
-            else
-            {
-                Console.WriteLine("Пользователь уже слушал эту книгу");
-            }
-        }
-
-        public async Task<int> GetBooksListenedByUserAsync(int userId)
-        {
-            var records = await _db.Table<BookListenRecord>()
-                .Where(r => r.UserId == userId)
-                .ToListAsync();
-
-            return records.Select(r => r.BookId).Distinct().Count();
         }
 
         public async Task<bool> HasUserListenedAsync(int userId, int bookId)
         {
-            var existing = await _db.Table<BookListenRecord>()
+            var record = await _db.Table<BookListenRecord>()
                 .Where(r => r.UserId == userId && r.BookId == bookId)
                 .FirstOrDefaultAsync();
 
-            return existing != null;
+            return record != null;
         }
 
         public async Task<int> GetUsersWhoListenedToBookAsync(int bookId)
@@ -67,6 +48,5 @@ namespace Course.DataServices
 
             return records.Select(r => r.UserId).Distinct().Count();
         }
-
     }
 }

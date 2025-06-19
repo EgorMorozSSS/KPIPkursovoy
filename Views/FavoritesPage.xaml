@@ -4,6 +4,7 @@
              x:Class="Course.Views.FavoritesPage"
              xmlns:viewmodel="clr-namespace:Course.ViewModels"
              xmlns:models="clr-namespace:Course.Models"
+             xmlns:controls="clr-namespace:Course.CustomControls"
              x:DataType="viewmodel:FavoritesViewModel"
              Title="Favorite Books"
              BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource OffBlack}}">
@@ -25,27 +26,44 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Book">
                         <Border Style="{StaticResource CardStyle}">
-                            <Grid RowDefinitions="Auto,Auto" 
-                                  ColumnDefinitions="Auto,*"
-                                  RowSpacing="5">
-                                <Image Source="{Binding Image}" 
-                                       Aspect="AspectFill"
-                                       WidthRequest="80" 
-                                       HeightRequest="120"
-                                       Grid.RowSpan="2"/>
+                            <Grid RowDefinitions="Auto,Auto,Auto,Auto" 
+      ColumnDefinitions="Auto,*"
+      RowSpacing="5">
+
+                                <controls:CustomImageControl Base64Source="{Binding Image}" 
+                                 WidthRequest="80" 
+                                 HeightRequest="120"
+                                 HorizontalOptions="Center" />
 
                                 <Label Text="{Binding Title}" 
-                                       FontAttributes="Bold"
-                                       Style="{StaticResource FieldLabel}"
-                                       Grid.Column="1"
-                                       Grid.Row="0"/>
+           FontAttributes="Bold"
+           Style="{StaticResource FieldLabel}"
+           Grid.Column="1"
+           Grid.Row="0"/>
+
+                                <Label Text="{Binding Description}" 
+           FontAttributes="None"
+           Style="{StaticResource FieldLabel}"
+           Grid.Column="1"
+           Grid.Row="1"
+           LineBreakMode="TailTruncation"
+           MaxLines="2" />
 
                                 <Label Text="{Binding Genre}" 
-                                       FontAttributes="Italic"
-                                       Style="{StaticResource CaptionLabel}"
-                                       Grid.Column="1"
-                                       Grid.Row="1"/>
+           FontAttributes="Italic"
+           Style="{StaticResource CaptionLabel}"
+           Grid.Column="1"
+           Grid.Row="2"/>
+
+                                <Button Text="Подробнее"
+            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:FavoritesViewModel}}, Path=NavigateToDetailsCommand}"
+            CommandParameter="{Binding .}"
+            Grid.Column="1"
+            Grid.Row="3"
+            HorizontalOptions="End"
+            Padding="5,2"/>
                             </Grid>
+
                         </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
